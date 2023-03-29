@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1- Learning the basics.</title>
+
+    <!-- Font Awesome Kit Code-->
+    <script src="https://kit.fontawesome.com/a034a7b4ed.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Stylesheet Code-->
+
+    <h2> Welcome too the introduction to Html coding. I hope this helps aid your course of action in learning coding. </h2>
+    <h1 style="color:black; font-family: 'Courier New', Courier, monospace; font-size: medium;"> Header using H1 down to H6 elements changes the font sizes</h1>
+    <H3> This header contains a <a href="https://www.google.com" target="_self"> hyperlink </a> too Google. Can you find it? </H3>
+</head>
+<body> 
+    <!-- Which elements are which-->
+    <div>
+        <p> P tag elements represent a new paragraph</p>
+
+        <p> When you have a new P tag element, it might be easier to use the <"div"> elements to nest them in the coding file.</p>
+
+        <p> Using <"--!--"> element We can create comments on the coding file that will usually show green to tell us that it is a developer comment</p>
+
+<p>  < span >  and < / span>" these take up only the space that they need appearing next to each other on a line</p>
+
+    <p> < nav > < / nav > Is used in the header to aid fast track location of an aspect on the page.</p>
+
+    <p> < section >, < article >, < main >, < span > all have a default setting of inline. This means that they will only take up the spacing on a line that the context requires. Whereas "header", "aside", "footer", "figure" are block tags.</p> 
+
+    <p> < Blockquote > tag elements are used to quote something or a text.</p>
+    
+    </div>
+
+    <!-- To add a HTML Hyperlink and images-->
+    <div>
+<p style="color:coral; font:200; font:bold"> When adding Hyperlinks
+    
+    
+    This is the text that - <a href="https://www.google.co.uk" target="_blank">  when clicked </a>- will take you too Googles' search engine. Opening into a new browser tab.
+    </p>
+    <P style="color:darkblue;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> 
+        Here we will learn how too add images as not only hyperlinks but visual aid into the destination of the link.</P>
+<a href="https://www.google.co.uk"> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDN-MudJPSedBOTxMj6q9ni7G1-o49uk8Xg&usqp=CAU">
+</a>
+
+
+<p> 
+<!-- a common reason an image isnt loading is the file path in src is incorrect. ensure to check the format, .jpg .jpeg and .png are reliable formats. others may not work but could be better in certain browsers like safari, IE edge, chrome -->
+<!-- put https://cdn.pixabay.com/photo/2015/01/07/11/31/tigers-591359__340.jpgthe images from unsplash in a div for more control of the size-->
+
+ <img src="/Images/google.png" alt="image description goes here incase the image doesn't load" width="150px" height="110px">
+ <br> </br>
+
+<img src="/Images/pixabay tiger.jpg" alt="pixabay image of a tiger and cub"  width="150px" height="100px">
+<br> </br>
+
+<a href="https://cdn.pixabay.com/photo/2015/01/07/11/31/tigers-591359__340.jpg" target="_blank">
+    <img src="/Images/pixabay-tiger.jpg">
+</a>
+</p>
+</div>
+
+<!-- HTML video- making a page within a page-->
+<div>
+<iframe width="450" height="315" 
+src="https://www.youtube.com/embed/kUMe1FH4CHE" 
+title="YouTube video player" frameborder="0"
+ allow="accelerometer; autoplay; clipboard-write;
+  encrypted-media; gyroscope; picture-in-picture; web-share"
+   allowfullscreen>
+</iframe>
+
+
+<p1 style="color:darkred; font: 200px;"> 
+    <br>
+The video below, I have embedded myself. By finding the video and clicking " share- embed and then copy and pasting the code between the tags "< p >"
+</br>
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/Ou2vqAwNEW8" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+     allowfullscreen></iframe>
+    </p1>
+</div>
+<br> </br>
+
+<!--HTML MAPS-->
+<div>
+    <p2 style="color:crimson; font:200; font:italic"> 
+    Here I have added the interface to use google maps to find Highfield Hospital by using the same method as the video. </p2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37876.1027673187!2d-2.2025334835052317!3d53.60672813228717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bbbd1b3d21c67%3A0xbcbc1c3715144eec!2sThe%20Highfield%20Hospital!5e0!3m2!1sen!2suk!4v1679414445244!5m2!1sen!2suk" width="500" height="450" style="border:0;" allowfullscreen=""
+     referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+
+<br> </br>
+
+<!-- HTML DOCUMENT LINK-->
+<div>
+<p style="color:black; Font:200"> This section shows an embedment of a text file imported the same way  <br> </br>
+Check out the regulations here!</p>
+<br> </br> 
+<iframe 
+src="/https://download-files.wixmp.com/raw/2e7483_f9c6b1e79a8543ca84258615a888ebf7.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YXBwOmU2NjYzMGU3MTRmMDQ5MGFhZWExZjE0OWIzYjY5ZTMyIiwic3ViIjoidXJuOmFwcDplNjY2MzBlNzE0ZjA0OTBhYWVhMWYxNDliM2I2OWUzMiIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sImlhdCI6MTY3OTQ0MTM4NSwiZXhwIjoxNjc5NDQyMjk1LCJqdGkiOiJhNDAyZjZjNi1hNzU2LTQwZjgtYWQyYi02MWUxMTJjZTY2NGMiLCJvYmoiOltbeyJwYXRoIjoiL3Jhdy8yZTc0ODNfZjljNmIxZTc5YTg1NDNjYTg0MjU4NjE1YTg4OGViZjcucGRmIn1dXSwiZGlzIjp7ImZpbGVuYW1lIjoiUmVnIDEwOSAtIERldmVsb3BtZW50IE9mZmljZXIgSXNzdWUgMS4wIDIwMTMucGRmIiwidHlwZSI6ImlubGluZSJ9fQ.Z03RQrWPL7FzA2GI1PDHuKhSGtErUdhWyHn_naQoP5g.pdf"
+ width="250px" height="300px" style="border:2;"> 
+</iframe>
+</div>
+
+<!-- How to do Emojis and Entities.-->
+<div>
+<p>
+    <title>
+     Entities chart.
+    </title>
+    <p>
+    a non-breakins space would be &#nbsp; or &#160;
+    </p>
+    <p>
+    "<" would be &#lt; or & #60; 
+    </p>
+    ">" would be &#gt; or & #62;
+    <p>
+    "&" would be &#amp; or & #34;
+    </p>
+    """ would be &#quot; or & #39;
+    <p>
+    "'" would be &#apos; or & #39;
+    </p>
+    "cent" would be &#cent; or & #162;
+    <p>
+    "pound" woukld ne &#pound or & #163;
+    </p>
+    "yen" would be &#yen; or & #165;
+    <p>
+    "euro" would be &#euro; or & #8364;
+    </p>
+    "copyright" would be &#copy; or & #169;
+    <p>
+    "registered trademark" would be &#reg; or & #174; 
+    </P>
+</div>
+
+<!-- Diacritical Marks -->
+    <div>
+<p>
+    <title> Diacritical Marks </title>
+</p>
+<p> 
+    A diacritical mark is used on characters to show accents
+    for example. 
+</p>
+    Guard in Polish would be Stranz&#768;ik.
+    <p>
+     Using the examplary word "guard" you would add the accent by coding "Stranz& #768 ;ik". 
+     Showing the code needed to be after the accented character.
+</p>
+
+</p>
+<p>
+      &#768;  would be "(character) & #768; "
+</p>
+<p>
+   &#769;  would be "(character) & #769;"
+</p>
+<p>
+    &#770; would be "(character) & #770;"
+</p>
+<p>
+    &#771; would be "(character) & #771;"
+</p>
+<p>
+    Credit <a href="https://www.w3schools.com/html/html_entities.asp"> W3schools.</a> 
+    <br> </br>
+    For symbols they would be the same components. See <a href="https://www.w3schools.com/html/html_symbols.asp"> W3schools Symbols</a> for more info.
+</p>
+
+</div>
+
+ <!-- Tables-->
+<div>
+<!-- An example of a simple table-->
+<!-- <tr> = Table row (top to bottom)-->
+<!-- <th> = table header cell  -->
+<!-- <td> = table data -->
+        
+        <table style="margin:80px; border:3px; color:black dotted;
+         background-color: black;" >
+            <tr style="margin:80px;"> <!--header row--> 
+            <!--column headers-->
+            <th style="background-color: aquamarine;"> Name </th> <!--left-->
+            <th style="background-color: aquamarine;"> Company </th> <!--centre-->
+            <th style="background-color: aquamarine;"> Job Role  </th> <!--right-->
+            <th style="background-color: aquamarine;"> Salary </th>
+            </tr>
+        
+            <tr style="background-color:aqua;margin:80px;">
+                <!-- data set 1-->
+            <td style="border:0.5px; color:black; padding:80px;"> Jamie Oliver </td>
+            <td style="border:0.5px; color:black; padding:80px;"> Fifteen Jamies </td>
+            <td style="border:0.5px; color:black; padding:80px;"> Chef </td>
+            <td style="border:0.5px; color:black; padding:80px;"> &#163;25m P/A</td>
+        
+        </tr>
+        </table>
+        </div>
+        
+        <!-- TASK- set a table of your choice -->
+        <div>
+        <!-- An example of a simple table-->
+        <!-- <tr> = Table row (top to bottom), <th> = table header cell  -->
+        <!-- <td> = table data -->
+            <table style="margin:80px; border:3px; color:black dotted;
+            background-color: aqua;" > 
+            <!-- Header Row each <th> element gives a new row--> 
+           <tr style="margin: 30px;"> 
+               <!-- Column Headers-->
+            <th style="border:0.5px black solid; margin:80px"> Header 1 </th>
+            <th style="border:0.5px black solid; margin:80px"> Header 2 </th>
+            <th style="border:0.5px black solid; margin:80px"> Header 3 </th>
+            </tr>
+        
+            <tr style="margin:30px">
+            <td style="border:0.5px black solid; margin:80px">Text Data 1</td>
+            <td style="border:0.5px black solid; margin:80px"> Text Data 2</td>
+            <td style="border:0.5px black solid; margin:80px"> Text Data 3</td>
+            </tr>
+             
+            <tr style="margin:30px;">
+                <td style="border:0.5px black solid; margin:80px"> 3rd Row Text data 1</td>
+                <td style="border:0.5px black solid; margin:80px"> 3rd Row Text data 2</td>
+                <td style="border:0.5px black solid; margin:80px"> 3rd Row Text Data 3</td>
+            </tr>
+        </table>
+        </div>
+        
+        <!--LISTS -->
+        <div>
+        <!--<ol> (Ordered Lists / Numbered Lists) or <ul> (Unordered Lists / Bulleted) 
+            Both contain <li> (List Items) -->
+        
+        <!-- For numbered lists - Type "1" (This is the default list)
+        Type "A" for listings to use UPPERCASE LETTERING 
+        Type "a" for listings to use lowercase lettering
+        Type "I" for listings to use UPPERCASE ROMAN NUMERALS
+        Type "i" for listings to use lowercase roman numerals-->
+        
+                <h3> Default Shopping List </h3>
+                <ol> 
+                    <li> Milk </li>
+                    <li> Honey </li>
+                    <li> Sugar </li>
+                    <li> Tea Bags </li>
+                    </ol>
+                    <br>
+                    <h3> UPPERCASE  Shopping List </h3>
+                <ol type="A"> 
+                    <li> Milk </li>
+                    <li> Honey </li>
+                    <li> Sugar </li>
+                    <li> Tea Bags </li>
+                    </ol>
+                    <br>
+        
+        <ul>
+            <h2> Things to do </h2>
+        <li> See monuments </li>
+        <li> Art gallery  </li>
+        <li> Amuzement park</li>
+        <li> Skiing</li>
+        </ul>
+        </div>
+        
+<!--Semantic Tags-->
+<span> 
+<h2> Semantic Tags </h2>
+<p> Semantic tags are elements that describe the jobs that they do. For example "Table" gives us a table, "Form" gives us a form,  "Header or Head" , "Body" or "Footer". Semantic tags are usually darker blue colour in a coding page.</p>
+
+<p>  "Head" Tags will contain the navigation, the heading of the page/ sub headings and potentially an image too.</p>
+
+<p> "Body" Tags tells us that it contains the main section of the coding page holding the main information.</p>
+
+<p> "Footer" Tags will contain information that are relevant but ian't mainly sought after. For example carreer opportunities, dietry info, contact information / names and references etc. </p>
+
+<p> "Nav" Tags are contentious as it is an element that is directly linked to specific parts of a page and is used for fast track locating.</p>
+
+<p> Tags that can replace "Div" tags can be tags like "article", "main", "figure", "section", "span", "block", "aside", "blockquote" </p>
+</span>
+
+<!-- ID and Classes -->
+<div>
+<h2> IDs and Classes </h2>
+
+<h3> Classes </h3>
+<p> The class attribute is often used to point to a class name in a stylesheet. (CSS). It can also be used by a Javascript (JS) to access and manipulate elements with the specific class name. The way it would be used is "< (element) class="" >" it can be used as a shorcut of sorts intead of using "< (element) style=""> to make writing in HTML format faster. " </p>
+
+<p> When the class attribute is used it enables data from another code language to be interpreted into another. See the video below for visual aid (10:00 onwards). </p>
+
+<p> We can identify a class element in CSS by its use of form "." For example "< div class="one">" in HTML would be ".one" for CSS.
+</p>
+<!-- They can be used on any HTML element and are case sensitive.-->
+
+ <div class="one"> This element has the class of one, which has been predefined in a CSS document. </div>
+<div class="two"> This element has the class of two, which has been predefined in a CSS document.</div>
+ - This has been taken from <a href="/Videos/HTML Day 3; Part 2.mp4"> 10:00 onwards</a>
+
+ <br> </br>
+ 
+ <h3> IDs </h3>
+
+ <p> The ID would be identified in CSS by its use of " # ". for exqmple < p id="title" > would be "#title " for CSS </p>
+<p> The ID attribute is simillar to the "class" attribute but with means of being specific to a HTML element. For example < h1  id="title" > the "title" wouls be the unique id for the header "< h1>". So if there were to be < h2 id="title"> this would show as an error as the same id has been used for different header types. This makes it useful for a specific part of the page to stand out amongst the rest.</p>
+
+    <p> When the "ID" attribute is used it enables data from another code language to be interpreted into another. Yet makes the element used unique in terms of not using the same id multiple times. See the video below for visual aid (22:00 onwards). </p>
+
+   <p> < h2 id="title" class="title">  If this tag was used and then the code was ran through a debug cycle, it would flag as an error because the ID and the class have the same "title" part. - This has been taken as a visual aid from the <a href="/Videos/HTML Day 3; Part 2.mp4"> video </a> as of 23:00</p>
+
+   <p> Simply put, if you want to use a style accross multiple elements then you would use a class. But if you wanted to use a stand out unique style then you would use ID </p>
+
+   <!-- They can be used in one place only-->
+
+   <h2> The hierarchy </h2>
+<!-- Order of priority. 1) ID 2) Class 3) Element-->
+   <p>Touching opn CSS language. If we were to use the following element, ID and Class:-
+    " < p id="b" class="a b c" > ". 
+And the CSS was programmed to have the attributes for each as the following :-
+#b( color: chartreuse; ) 
+.b( color: deeppink;) 
+.c( font-weignt: 700;
+    font-size: large; 
+    color: brown ;) 
+
+There are 3 clashes between the color sets. However, because the ID is at the top of the hierarchy, the color "chartreuse" would take precedence. Thus making the class colours from ".b" and ".c" irrelevent for the element but the other attributes, " font- weight" and "font-size" would still be relevent. </p>
+</div>
+
+<!-- HTML Forms-->
+<aside>
+    <h2> Forms </h2>
+
+<p> A form uses the semantic tag "< form > which will then require two lines of code for  "< label >" and " < input >" </p>
+
+<p> "< label >" will be describing the box. For example "First name:", it will also have a for attribute to be linked to the inputs ID but these will need to be the same. 
+</p>
+
+<p> "< input >" will have ,ultiple attributes, these will change dependent on the inout type. Basic attributes include "type" which determines the type of input, "id" which can be used in conjunction with CSS or Javascript and name which can be linked too "< label >" by using "for"  </p>
+
+<!-- Basic form layout-->
+<form action="/Submit Form Button.Html" target="_blank">
+    <label for="first"> First Name: </label>
+    <input type="text" id="first" name="first" placeholder="First Name or Title" minlength="2" maxlength="20" required> 
+
+    <!-- Using the break element makes the next label go onto the next line-->
+<br>
+    <label for="last"> Last Name: </label>
+    <input type="text" id="Last" name="last" placeholder="Last Name" required>
+<br> 
+    <label for="Email"> Email Address: </label>
+    <input type="email" id="Email" name="email" placeholder="Email Address">
+    <br> 
+    <label for="date"> Enter Your Birthday </label>
+    <input type="date" id="birthday" name="birthday" placeholder="DD/MM/YYYY">
+    <br> 
+    <label for="phone"> Phone Number </label>
+    <input type="number" id="number" name="number" placeholder="Contact Number">
+    <br>
+    <input type="submit" id="submit" value="Submit Form">
+    <input type="reset" value="Reset Form">
+<br>
+
+
+
+
+
+<a href="/Videos/HTML Day 4; Part 1.mp4"> Day 4 Part 1 - 50:00</a>
+<!-- date, phone, submit, reset-->
+</form>
+
+
+
+</aside>
+
+<!--Select option-->
+
+<main>
+    <h2> Select Option</h2>
+    <a href="/Videos/HTML Day 4; Part 2.mp4"> Day 4 Part 2 </a>
+    <p> Select options are used to suggest a list of things in a comtained space like a drop down box to save space. </p>
+<br> 
+<p> The select option function woiuld be used if the choices available were usually less than 5. </p>
+<br>
+<p> they would be created musing the following c/ode:-
+
+    "< label for="console"> Choose game console < label > </p>
+<label for="console" style="font-family: cursive; background-color: cadetblue;"> Choose Preffered Games Console &#127918;</label>
+    <select name="consoles" id="consoles"> 
+        <option value="default"> Select Option </option>
+        <option value="Xbox" style="background-color: green;"> Xbox </ option>
+        <option value="Playstation" style="background-color: blue;"> Playstation </option>
+        <option value="WII" style="background-color: white;"> WII </ option>
+        <option value="Nintendo DS" style="background-color: red;"> Nintendo DS  </option>
+        </select>
+
+
+    <p> From here we would add the drop box of options by using the code:-
+        "< select name="consoles" (id="consoles" (If we had a CSS link)> 
+
+        < option value="default"> Select Option </ option>
+        < option value="Xbox"> Xbox </ option>
+        < option value="Playstation"> Playstation </ option>
+        < option value="WII"> WII </ option>
+        < option value="Nintendo DS"> Nintendo DS  </ option>
+        </ select>
+        The "value" is the text that will be shown as the selectable option.
+        <br>
+        We could also use the attributes to add emojis, background colour and other custom sets.
+    </p>
+<br>
+ <!-- Make your own Select option from memory-->
+
+ <label for="Animal" style="background-color: pink;"> What pet would you like. </label>
+ <select name="Animals"> 
+    <option value="default"> Select Pet </option>
+    <option value="Cat" > Cat&#128049; </option>
+    <option value="Dog" > Dog&#128054; </option>
+    <option value="Snake"> Snake&#128013; </option>
+ </select>
+ <br> 
+</main>
+
+<!-- Radio buttons-->
+<article>
+<h2> Radio Buttons</h2>
+
+<p> Radio buttons are used for the user to only be able to select one option only.</p>
+<p> The reason only one option can be selected at a time is because of the attribute "name" (fruit) being the same in all of the "input" elements.
+    However if some of the "name" attributes were different, for example 2 were "name="fruit" ", and 2 were "name="fruit1" ". This would allow us to choose 2 options. 
+</p>
+<br>
+<p> If a radio button was going to be used in a form layout, it would be contained in the "form" semantic tags. It would look like :
+
+    Select your favourite fruit.
+    <form>
+    <input type="radio" id="apple"(If we had a CSS link) name="fruit" value="Apple">
+    <label for="apple"> &#127822; </label>
+    <br>
+    <input type="radio" id="bananna"(If we had a CSS link) name="fruit" value="Bannana">
+    <label for="bananna"> &#127820; </label>
+    <br>
+    <input type="radio" id="cherry"(If we had a CSS link) name="fruit" value="Cherry">
+    <label for="cherry"> &#127826; </label>
+    <br>
+    
+    </form>
+</p>
+
+<p> 
+The code for a radio button would consist of the following code:-
+<br>
+Select your favourite fruit.
+< form>
+< input type="radio" id="apple"(If we had a CSS link) name="fruit" value="Apple">
+< label for="apple"> &#127822; < /label>
+< br>
+< input type="radio" id="bananna"(If we had a CSS link) name="fruit" value="Bannana">
+< label for="bananna"> &#127820; < /label>
+< br>
+< input type="radio" id="cherry"(If we had a CSS link) name="fruit" value="Cherry">
+< label for="cherry"> &#127826; < /label>
+< br>
+
+</ form>
+</p>
+<br>
+<p> 
+Another layout for a Radio Button would simply just be the "label" and "input" tags. (See below)
+
+Select your favourite fruit.
+<br>
+<input type="radio" id="apple"(If we had a CSS link) name="fruit" value="Apple">
+<label for="apple"> &#127822; </label>
+<input type="radio" id="bananna"(If we had a CSS link) name="fruit" value="Bannana">
+<label for="bananna"> &#127820; </label>
+<input type="radio" id="cherry"(If we had a CSS link) name="fruit" value="Cherry">
+<label for="cherry"> &#127826; </label>
+
+<br> 
+<!-- NOTE THAT THE < BR> FUNCTION HAS BEEN REMOVED TO PREVENT LISTING-->
+
+Select your favourite fruit.
+< input type="radio" id="apple"(If we had a CSS link) name="fruit" value="Apple">
+< label for="apple"> &#127822; < /label>
+
+< input type="radio" id="bananna"(If we had a CSS link) name="fruit" value="Bannana">
+< label for="bananna"> &#127820; < /label>
+
+< input type="radio" id="cherry"(If we had a CSS link) name="fruit" value="Cherry">
+< label for="cherry"> &#127826; < /label>
+</p>
+</article>
+
+<!--Check Boxes-->
+<block>
+<h2> Check Boxes </h2>
+
+<p>
+Check boxes are similar to radio buttons bar they are selected using "tivks" instead of filling buttons. Allowing the user to be able to select multiple or no options.</p>
+ <br>
+ <p> Check box code consists of :- </p>
+ <p>
+How do you travel to work? Tick all that apply:
+< form>
+    < input type="checkbox" id="walk"(If we had a CSS link) name="transport" value="walk">
+< label for="walk"> walk   < /label>
+< br>
+< input type="Checkbox" id="drive"(If we had a CSS link) name="transport" value="drive">
+< label for="drive"> Drive < /label>
+< br>
+< input type="checkbox" id="public"(If we had a CSS link) name="transport" value="public">
+< label for="public"> Public transport < /label>
+< br>
+< input type="submit" value="submit">
+ </ form>
+ <br>
+</p>
+<p> 
+    That code would look like this:-
+    <br>
+    How do you travel to work? Tick all that apply:
+<form>
+    <input type="checkbox" id="walk"(If we had a CSS link) name="transport" value="walk">
+<label for="walk"> walk   </label>
+<br>
+<input type="Checkbox" id="drive"(If we had a CSS link) name="transport" value="drive">
+<label for="drive"> Drive </label>
+<br>
+<input type="checkbox" id="public"(If we had a CSS link) name="transport" value="public">
+<label for="public"> Public transport </label>
+<br>
+<input type="submit" value="submit">
+ </form>
+</p>
+</block>
+
+<!-- Data Lists-->
+<span>
+<h2> Data Lists</h2>
+<p> Data lists specify a list of pre-set options for an "input" element to hold so the user can select one. </p>
+<p> The "id" attribute must be the same as the "input" elements list attribute as this binds the two together.</p>
+<p> Data lists would be used under the circumstances of there being more than 5 options available to the user</p>
+<br>
+<p> See the following for the layout of a data list code:- </p> 
+<br>
+<p> The "id" on the "input" element has to correlate with the "for" on the "label" element. The "list" attribute has to also correlate with the "id" on the "datalist" element </p>
+<br>
+<p>
+    < label for="potato"> Choose your potato option </ label>
+    < input list="cooking" name="potato" id="potato" required>
+
+    < datalist id="cooking">
+    < option value="Jacket">
+    < option value="boiled"> 
+    < option value="mashed">
+
+    </ datalist>
+</p>
+<p> This would look like this :- 
+    <br>
+    <label for="potato"> Choose your potato option  </label>
+    <input list="cooking" name="potato" id="potato" required>
+
+    <datalist id="cooking">
+    <option value="Jacket">
+    <option value="Boiled"> 
+    <option value="Mashed">
+    </datalist>
+</p>
+    <br>
+<p>
+    If we have 2 datalists arranged and wanted to swap the options then we woukld simply change the "list" attribute of the "input" tag and the options will change accordingly.
+
+    <datalist id="transport">
+        <option value="Car"> 
+        <option value="Train"> 
+        <option value="Bus"> 
+    </datalist>
+</p>
+
+<p>
+    If we wanted a shadow on or under the "value", visible to the user in the datalist then we would close off the "option value" elemental attribute and the give the option the shadow text. As shown with the "option (1/2/3)". we would then give the "option" a closing tag.
+    For example: < option value="Boiled"> option 1</ option>
+</p>
+    <label for="car" style="background-color: blue; font-weight: 600;"> Choose your preferred car. </label>
+    <input list="Cars" name="potato" id="car" required>
+    <datalist id="Cars">
+    <option value="Car 1"> Audi</option>
+    <option value="Car 2"> BMW</option>
+    <option value="Car 3"> Nissan </option>
+    </datalist>
+
+</p>
+</span>
+
+<!-- Fieldset and Legend -->
+<main>
+<h2> Fieldset and Legend</h2>
+
+<p> The "< fieldset>" tag is used to group related elements in a form and draws a box around them</p>
+<p> The "< legends" tag defines a caption for the "< fieldset>"" element</p>
+<p> For every set of data you want to put a box around you will need to put it inside of a newd "< fieldset >" tag inside the "< form " tag.</p>
+<p>Within the open and closing "< fieldset >" tags. This nests the "Legend" and then the rest of the form. In this case it would be the "Label" and "Input" tags. </p>
+
+<p> For instance:- </p>
+<p>
+< form style="margin: 100px; width: 100px;">
+< fieldset> 
+< legend> Profile: </ legend> <!-- This is the caption for the surrounding box.-->
+< label for="first"> First Name</ label>
+< input type="text" id="first" name="first" required>
+< br>
+< label for="last"> Last Name</ label>
+< input type="text" id="last" name="last">
+< br> 
+< label for="email"> Email Address</ label>
+< input type="text" id="email" name="email">
+< br> 
+< label for="birthday"> Birthday</ label>
+< input type="date" id="birthday" name="birthday">
+< br>
+< /fieldset>
+
+< fieldset>
+    < legend> Card Details: </ legend>
+    < label for="cardname"> Card Name: </ label>
+    < input type="text" id="cardname" required>
+</ fieldset>
+< br>
+< input type="submit" value="submit">
+</ form>
+</p>
+
+<p>
+    This would look like :-
+    <br>
+    
+<form style="margin: 100px; width: 100px;">
+<fieldset> 
+    <legend> Profile: </legend>
+<label for="first"> First Name</label>
+<input type="text" id="first" name="first" required>
+<br>
+<label for="last"> Last Name</label>
+<input type="text" id="last" name="last">
+<br> 
+<label for="email"> Email Address</label>
+<input type="text" id="email" name="email">
+<br> 
+<label for="birthday"> Birthday</label>
+<input type="date" id="birthday" name="birthday">
+<br>
+</fieldset>
+
+<fieldset>
+    <legend> Card Details: </legend>
+    <label for="cardname"> Card Name: </label>
+    <input type="text" id="cardname" required>
+</fieldset>
+<br>
+<input type="submit" value="submit">
+</form>
+</p>
+<br>
+<p> We can add one of the other set too this like a checkbnox, radio button, select option or datalist by adding the relevent coding before the ending of the "< /fieldset" closing tag.
+This would look like the following :-  </p>
+
+<p>
+
+    < form style="margin: 100px; width: 100px;">
+    < fieldset> 
+    < legend> Profile: </ legend> <!-- This is the caption for the surrounding box.-->
+    < label for="first"> First Name</ label>
+    < input type="text" id="first" name="first" required>
+    < br>
+    < label for="last"> Last Name</ label>
+    < input type="text" id="last" name="last">
+    < br> 
+    < label for="email"> Email Address</ label>
+    < input type="text" id="email" name="email">
+    < br> 
+    < label for="birthday"> Birthday</ label>
+    < input type="date" id="birthday" name="birthday">
+    < br>
+
+    < label for="Gender"> Choose your Gender </ label>
+    < input list="gender" name="potato" id="Gender" required>
+    
+    < datalist id="gender">
+    < option value="Male">
+    < option value="Female"> 
+    < option value="Other">
+
+    </ datalist>
+
+    < /fieldset>
+
+<br>
+    
+    <form style="margin: 100px; width: 100px;">
+    <fieldset> 
+    <legend> Profile: </legend> >
+    <label for="first"> First Name</label>
+    <input type="text" id="first" name="first" required>
+    <br>
+    <label for="last"> Last Name</label>
+    <input type="text" id="last" name="last">
+    <br> 
+    <label for="email"> Email Address</label>
+    <input type="text" id="email" name="email">
+    <br> 
+    <label for="birthday"> Birthday</label>
+    <input type="date" id="birthday" name="birthday">
+    <br>
+
+    <label for="Gender"> Choose your Gender </label>
+    <input list="gender" name="potato" id="Gender" required>
+    
+    <datalist id="gender">
+    <option value="Male">
+    <option value="Female"> 
+    <option value="Other">
+    </datalist>
+    </fieldset>
+</p>
+
+</main>
+
+<!-- Web Hosting-->
+
+<article>
+<h2> Web Hosting</h2>
+<p> Web hosting  </p>
+
+
+</article>
+
+<!-- CSS Intro-->
+<main>
+<h4> Intoduction to CSS </h4>
+
+
+<h2> The Relationships between tags and elements</h2>
+
+<p>
+    Quick break down of relationships between tags and elements.
+    <br>
+    <br>< body> = parent to < header> (< header is considere a child>) grand parent too < h1>, < div>, < img src> but great grandparent too < p>
+    <br> < header> = child but also has children - < h1>, < p> , < img src> (otherwise known as siblings)
+    <br> Sibllings = grandchildren to < body>
+    <br><br>
+    <br> < body> is the parent
+    <br>< header> child of < body>
+    <br>< Img src> < h1> < div> are grandchildren of < body> but children of < header>
+    <br>< p> is the great grandchild of < body>
+    <br>
+        For example 
+        <br>< section> <!- This section is a child of the body tag->
+        <br>   < nav> <!- This section is a grandchild of the body tag ->
+        <br>    < a href="">< /a> <!- This section is a great grandchild of the body tag ->
+        <br>    < a href="">< /a>
+        <br>    < a href="">< /a>
+        <br>< /nav>
+        <br>< /section>
+</p>
+
+<br>
+    <h2> Combinator Selectors </h2>
+    <br>
+    <p>
+    Combinator Selectors use a preset code of rulings to be able to select elements based on a specific relationship between them.
+    </p>
+    <p>
+    Decendent selector (space) ELEMENT ELEMENT e.g div p { styleCode }
+    <br>div p{         --- Any paragraph that is a decendent of a div will give the following ---
+    <br>font-weight: 300;
+    <br> color : pink;
+    }
+    </p>
+    <p>
+    <br>    
+    Child selector (>) ELEMENT > ELEMENT {} e.g div>p{styleCode} p is a child of div 
+    <br>div>p{         --- Any paragraph that is a CHILD decendent of a div will give the following ---
+    <br>font-weight: 300;
+    <br> color : pink;
+    }
+    </p>
+    <p>
+    <br>
+    Adjacent sibling selector (+) next to the target ELEMENT + ELEMENT{}
+    <br>div+p{         --- Anything that is a immediatley above or below (adjacent) the div but on the same level will give the following ---
+    <br>font-weight: 300;
+    <br>color : pink;
+    }
+    <br>
+    For example 
+    <br>< div class ="">
+    <br>< p> word < /p> ----IMPACTED BY SELECTOR
+    <br>< div class="">
+    <br>  < img src="/file/filename" alt="alternative">
+    <br></ div>
+    <br>< p> word < /p> ----ALSO IMPACTED BY SELECTOR AS IT IS ADJACENT
+    <br>< div class=""> ---- NOT AFFECTED AS IT IS THE SAME LEVEL AS INITIAL DIV
+    <br>     < img src="/file/filename" alt="alternative">
+    <br>     </ div>
+    <br>
+    </p>
+   <p>
+        General sibling selector (~) anything on the sibling ELEMENT ~ ELEMENT{}
+    <br>
+    div~p{         --- Anything that is a general sibling after the div will give the following ---
+        <br> font-weight: 300;
+        <br> color : pink;
+    }
+    <br>
+    For example 
+    <br>< div class ="">
+    <br>< p> word < /p> 
+    <br>< div class="">
+    <br>    < img src="/file/filename" alt="alternative">
+    <br>< /div>
+    <br>< div class=""> 
+    <br>     < img src="/file/filename" alt="alternative">
+    <br>     < /div>
+    <br>     < p> word < /p> ----IMPACTED BY GENERAL SELECTOR
+    <br>     < p> word < /p>  ----IMPACTED BY GENERAL SELECTOR
+    <br>     < p> word < /p>  ----IMPACTED BY GENERAL SELECTOR
+    <br>
+    Sibling = same level of power in the code hierarchy.
+</p>
+    
+    <p><br>
+    Pseudo-class selectors (select elements based on a certain state)
+    <br>
+    Style an element for when the user hovers the mouse over. -- Typically used with forms
+    Style visited and unvisited links differently -- Typically used with hyperlinks
+    Style an element when it gets focus
+    <br>
+    .btn,
+    <br>button {
+    <br>    background-color: red;
+    <br>    color:pink;
+    }
+    <br>
+    .btn:hover,
+    <br>input:hover,
+    <br>button:hover {
+    <br>    background-color: pink;
+    <br>    color:red;
+    
+    <br>a:link {
+    <br>        color: lightblue;   }
+    }
+    <br>
+    a:visited {
+    <br>color:purple;
+    }
+</p>
+
+
+</main>
+
+
+<!-- CSS  (Fonts)-->
+<div>
+<h2> CSS Coding Fonts and Icons </h2>
+<p> CSS style sheets are a set of codes written to use as a way of styling a page with HTML coding on it. This would be considered a ruleset. Using these rulesets we can give our webpages a bit of personality by simply adding the CSS code into the "head" tag of the HTML sheet.
+    When writing in CSS format we always start with the property which is generally in a blue colour. After the colon, would be the value the property that will be take on by the item.
+   <br> For eample :-
+<br>If in CSS code we had :
+<br>"div {
+    <br>font-weight:700;
+    <br>color:cornflowerblue;
+    <br>font-size:18px
+    <br>}"
+    <br> This would change any text contained in "div" tags within a HTML document to be bold (font-weight: 700;)
+ have the text chnaged to cornflowerblue (color:cornflowerblue;) and have a font size of 18 pixels (font-size:18px). This depends on the rules explained previously on the specificity and hierarchy of the "id" (#"idName") and "class" (."ClassName") attributes. </p>
+ <br>
+ <h6> Inline, internal and external CSS </h6>
+ <br>
+<p> Internal = In HTML document using "style" e.g style="color: blue, font-fsmily:Arial;"
+Internal = CSS written inside a CSS stylesheet in the coding software used by the user.
+
+External = CSS imported by an external source. 
+For example in this case we will be using external CSS from Googlefonts.com and fontawesome.com.
+</p>
+
+<p>  Starting our journey with CSS we will be looking at how to add or chnage fonts using websites <a href="https://www.googlefonts.com"> Google fonts </a> and <a href="https://fontawesome.com"> Font Awesome</a>
+</p><br>
+<h5> Google fonts</h5>
+<p>
+Using Google fonts we would load up the webpage. Select our fonts and then, just like the imported video method. We would use the "head" tags in the boilercode to insert the embedded code we have copied from google fonts. 
+It would look as follows:-
+</p> 
+
+
+<p>
+< head>
+<br>
+        < meta charset="UTF-8">
+    <br> < meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <br> < meta name="viewport" content="width=device-width, initial-scale=1.0">
+<br>
+    < link rel="preconnect" href="https://fonts.googleapis.com">
+<br> < link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<br> < link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Crimson+Text&family=Josefin+Sans&family=Roboto:wght@500&display=swap" 
+rel="stylesheet">
+    <br> < title>Document< /title>
+<br> < /head>
+</p>
+
+<p>
+    To link the HTML file code with the CSS file code we would use the following line:-
+"< link rel="stylesheet" href="style.css"> "
+</p>
+
+<p>
+    < link rel="stylesheet" href="/CSS coding/CSS 1 STYLES.css"> - This uses a file path to locate where the CSS code is to shortcut the styling.
+    <br> 
+    <link rel="stylesheet" href="/CSS coding/CSS 1 STYLES.css">
+This will change which tags and elements have the coding included to that relayed in course with the CSS stylesheet.
+For this, I have created the element "h4" and I have styled it - <h4>Like this.</h4> - 
+</p>
+
+<p> The reason we put the CSS code link into the "head" element is because on tne CSS codesheet, the coding will refer to different elements in HTML and will automatically occur once written.</p>
+
+<br> 
+
+<h3> Font Awesome</h3>
+
+<p> Font awesome is similar to Google fonts however, instead of using fonts. Font Awesome uses icons instead. Many of which are used in todays technology. There are the typical icons and even social media icons too making it a really useful site too use.</p>
+
+<p> Font Awesome can be useful for enforcing a theme of a page with icons. Saving space, coding time and keeping the user directly interacting with the interface.</p>
+
+<p> To use Font Awesome we would simply sign up for the free kit code and follow the instructions to allow cross communication between the Html file and the server. This is as simple as copying and pasting the unique code into the "head" tag of our HTML page.
+    <br> From there, we would select an icon from Font Awesome and then  add it into our code. 
+    For example on a "Nav Bar" you might want to use icons instead of words or alongside them so :- 
+< nav class="nav1">
+< a href="#home"> Home < i class="fa-solid fa-house"> < /i> < /a>
+< /nav>
+<br> 
+With this line we have the "class="nav1"" acting for the set code from CSS 
+We have the href "#home" for a specific CSS programme.
+Finally we have the "< i class="fa-solid fa-house"> < /i>". Which is the code imported from Font Awesomes page to represent the "Home" icon.
+<i class="fa-solid fa-house"> </i> 
+
+</p>
+</div>
+
+<!--Chrome developer tools-->
+<blockquote>
+<h3> Chrome developer tools.</h3>
+
+<p> To get to Chrome developer tools: click the elipsis in the browser and then scroll down too "More tools". From here go too "developer tools". This will open a window where you can then see the elements of the current webpage you're on. Using this you can click on a piece of a page and see the HTML coding that makes it part of the webpage including any other coding languages that work in conjunction like CSS.</p>
+
+<p> This is a great way to edit and test things in the Chrome Developer tools that you can potentially use in your own coding.</p>
+</blockquote>
+
+<!-- CSS Day 2 (Backgrounds and Bodys)-->
+<div>
+<h3> Background and Borders with CSS </h3>
+
+<p> 
+Pages are initialised with a basic white background that we can edit or customise to give our page more of a personality.
+    Backgrouynnds and borders allow us to fill our page with colour, clipped or resized imagery and many more ways.
+These styles can also decorate borders with lines, images, rounded or squared.
+</p>
+
+<p> 
+If we were to use the tag "< "element", id name or class {
+ <br>   background: <!-- This is the shorthand command that can deal with the basic styling -->
+<br>SHORTHAND 
+<br>body { 
+<br>background: url('File path to selected image')  no-repeat center 100px;
+<br>}
+<br>#background-vid{
+    <br>position: fixed;
+    <br>z-index:-1;
+    <br>width:100px;
+    <br>height:100%;
+<br>}
+<br> When we loaded our page we would have an image that we have inserted into the file path("background:url('FilePath')"),with the repeater disabled ("no-repeat") placed into the cemter of the page ("center") with a size of 100 pixels (100px).
+</p>
+
+<p>
+    If an image has a transparent background then we could add a colour too it ourselves. 
+</p>
+
+
+</div>
+
+
+
+</body> 
+</html>
+
+
+
+<!-- 
+    The coding industry general standard of "px sizes"
+    P is usually about 16px
+    H3 is usually 32px 
+    H2 is usually 48px
+    H1 is usually 64px -->

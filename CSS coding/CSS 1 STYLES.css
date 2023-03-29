@@ -1,0 +1,175 @@
+/* Introduction to css*/
+
+/* To insert CSS code we would code "<link:CSS rel: "stylesheet";href=:"file or URL" >"
+
+/*CSS comment*/
+/* Remember!
+Div {style} = mainly aimed at Tags 
+.heading {style} = mainly aimed at Class names (Can be used multiple times)
+#title {style} = mainly aimed at ID names (Specifically Unique) */
+
+/*
+font-family: 'Alkatra', cursive; H1
+font-family: 'Crimson Text', serif; General
+font-family: 'Josefin Sans', sans-serif; Headings (Not H1)
+*/
+
+/* Inline, internal and external CSS */
+/* Internal = In HTML document using "style" e.g style="color: blue, font-fsmily:Ariel;"
+Internal = CSS written inside a CSS stylesheet in the coding software used by the user
+External = CSS imported by an external source. 
+*/
+
+/* Given Example */
+
+div{    /* Tag name */
+font-weight: 700;
+color:cornflowerblue;
+font-size: 18px;
+}
+
+#title {   /* ID name */
+    font-size: 16px;
+}
+
+.heading {  /* Class name */
+    font-size: medium;}
+
+
+
+/* Selectors in CSS
+
+These are the HTML elements we want to target specifically to style
+
+Simple selectors (select elements based on the name, id , class) uses the element name (e.g p or div) and id given to an element or class name (e.g "shadow", the symbol for class = ".") */
+
+
+/* General styles */
+body {
+    background-color: rgb(rgb(131, 245, 226),);
+    font-family: 'Crimson Text', serif;
+    color: crimson;
+    margin: 0%;
+    overflow-x: hidden;}
+
+h1 {
+    font-family: 'Alkatra', cursive;
+    display: inline;
+    margin-left: 5%;
+    font-size: 32px;
+ }
+
+ .heading {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 2%;
+}
+
+
+
+
+#main {
+    color: chartreuse;
+    font-size: large;
+}
+
+.content {
+    color: rgb(241, 241, 241);
+    background-color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* Combinator Selectors 
+
+Select elements based on a specific relationship between them 
+
+Decendent selector (space) ELEMENT ELEMENT e.g div p { styleCode }
+div p{         <!-- Any paragraph that is a decendent of a div will give the following -->
+ font-weight: 300;
+ collor : pink;
+}
+
+Child selector (>) ELEMENT > ELEMENT {} e.g div>p{styleCode} p is a child of div 
+div>p{         <!-- Any paragraph that is a CHILD decendent of a div will give the following -->
+ font-weight: 300;
+ collor : pink;
+}
+
+Adjacent sibling selector (+) next to the target ELEMENT + ELEMENT{}
+div+p{         <!-- Anything that is a immediatley above or below (adjacent) the div but on the same level will give the following -->
+ font-weight: 300;
+ collor : pink;
+}
+For example 
+<div class ="">
+<p> word </p> ----IMPACTED BY SELECTOR
+<div class="">
+    <img src="/file/filename" alt="alternative">
+</div>
+<p> word </p> ----ALSO IMPACTED BY SELECTOR AS IT IS ADJACENT
+<div class=""> ---- NOT AFFECTED AS IT IS THE SAME LEVEL AS INITIAL DIV
+     <img src="/file/filename" alt="alternative">
+     </div>
+
+General sibling selector (~) anything on the sibling ELEMENT ~ ELEMENT{}
+
+div~p{         <!-- Anything that is a general sibling after the div will give the following -->
+ font-weight: 300;
+ collor : pink;
+}
+
+For example 
+<div class ="">
+<p> word </p> 
+<div class="">
+    <img src="/file/filename" alt="alternative">
+</div>
+<div class=""> 
+     <img src="/file/filename" alt="alternative">
+     </div>
+     <p> word </p> ----IMPACTED BY GENERAL SELECTOR
+     <p> word </p>  ----IMPACTED BY GENERAL SELECTOR
+     <p> word </p>  ----IMPACTED BY GENERAL SELECTOR
+
+Sibling = Same level in the code.
+
+pseudo-class selectors (select elements based on a certain state)
+
+Style an element for when the user hovers the mouse over. -- Typically used with forms
+Style visited and unvisited links differently -- Typically used with hyperlinks
+Style an element when it gets focus
+
+.btn,
+button {
+    background-color: red;
+    color:pink;
+}
+
+.btn:hover,
+input:hover,
+button:hover {
+    background-color: pink;
+    color:red;
+
+    a:link {
+        color: lightblue;   }
+}
+
+a:visited {
+color:purple;
+}
+*/
+
+
+
+
+
+h4 {
+    color: crimson; 
+    background-color: aqua;
+     font-family: cursive;
+}
+

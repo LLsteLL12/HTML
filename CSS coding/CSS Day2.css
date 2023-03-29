@@ -1,0 +1,63 @@
+/* Backgrounds and Bodys*/
+
+/*If we were to use the tag "< "element", id name or class {
+    background: <!-- This is the shorthand command that can deal with the basic styling -->
+SHORTHAND 
+body { 
+background: url('File path to selected image')  no-repeat center 100px;
+}
+#background-vid{
+    position: fixed;
+    z-index:-1;
+    width:100px;
+    height:100%;
+}*/
+
+
+.body{
+    background: url("/Images/Strawberries.jpeg"); background-size: cover;
+}
+
+#body{
+    background-image: 
+    linear-gradient(to top, #f7f7f7 ) url(/Images/Strawberries.jpeg)
+} 
+/* colours range with hex numbers "#f7f7f7" or "rgba(138,221,96,0.796)" 
+To make certain colours stronger then you can add a % after each colour.
+For example   background-image:
+    radial-gradient(rgba(138, 221, 96, 0.796) 30%, rgba(20, 209, 222, 0.93) 30%), */
+
+.test{
+    background: url(/Images/strawberry\ field.jpeg);
+}
+
+.shadow{
+    background: black;
+    color: white;
+}
+
+    p{
+border: 5px blueviolet groove;
+width: 150px;
+height: 150px;
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    The coding industry general standard of "px sizes"
+    P is usually about 16px
+    H3 is usually 32px 
+    H2 is usually 48px
+    H1 is usually 64px
+    */
+
