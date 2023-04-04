@@ -45,7 +45,7 @@ Simple selectors (select elements based on the name, id , class) uses the elemen
 
 
 /* General styles */
-body {
+.body {
     background-color: rgb(rgb(131, 245, 226),);
     font-family: 'Crimson Text', serif;
     color: crimson;

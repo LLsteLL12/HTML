@@ -2,7 +2,8 @@
 
 /*If we were to use the tag "< "element", id name or class {
     background: <!-- This is the shorthand command that can deal with the basic styling -->
-SHORTHAND 
+
+    SHORTHAND 
 body { 
 background: url('File path to selected image')  no-repeat center 100px;
 }
@@ -14,13 +15,13 @@ background: url('File path to selected image')  no-repeat center 100px;
 }*/
 
 
-.body{
-    background: url("/Images/Strawberries.jpeg"); background-size: cover;
+body{
+    background: url("/Images/black\ and\ white\ fruit.jpg"); background-size: cover;
 }
 
 #body{
     background-image: 
-    linear-gradient(to top, #f7f7f7 ) url(/Images/Strawberries.jpeg)
+    linear-gradient(to top, #a4cdfc ) url(/Images/Strawberries.jpeg)
 } 
 /* colours range with hex numbers "#f7f7f7" or "rgba(138,221,96,0.796)" 
 To make certain colours stronger then you can add a % after each colour.
@@ -36,23 +37,64 @@ For example   background-image:
     color: white;
 }
 
+.d{
+    color: #fa8787;
+}
+
+/* There are individual commands you can use such as background-color etc.*/
+
+/* LONGHAND */
+
+
+
+h1{
+    background-color: forestgreen; 
+     color: firebrick;
+     font-style: oblique; 
+        font-family: 'Times New Roman', Times, serif; font-size: 100px
+}
+
     p{
-border: 5px blueviolet groove;
-width: 150px;
-height: 150px;
+border: 2px blueviolet groove;
+display: block;
     } 
 
 
+#bg-vid{
+    border: none;
+    position:fixed;
+    right:0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+}
+
+#lists{
+    background-color: aqua;
+}
+
+.checkbox {
+    background-color: #fa8787; 
+}
+
+.picture{ 
+    margin: 10% 10% 1% 20%;
+    padding: 1px 10px 1px 20px;
+}
 
 
+#about h2 {
+    display: inline-block;
+}
 
+#about h3 {
+    display: block;
+}
 
-
-
-
-
-
-
+#about p {
+    display: inline;
+    margin: 20%;
+}
     /*
     The coding industry general standard of "px sizes"
     P is usually about 16px

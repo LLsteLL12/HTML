@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,36 @@
     <H3> This header contains a <a href="https://www.google.com" target="_self"> hyperlink </a> too Google. Can you find it? </H3>
 </head>
 <body> 
+    <!--Navigation Bar For Page-->
+       <div>       <!--24 hyperlinks for 24 topics for the nav bar-->
+    <nav>    <!-- Links to any pages on the site-->
+        <a href="/HTML Coding/HTML 1.html"> Home  </a>
+        <a href="#Elem"> Elements & Tags </a>
+        <a href="#Hyper"> Hyperlinks & Images </a>
+        <a href="#Video"> Adding Videos </a>
+        <a href="#Map"> Adding Maps </a>
+        <a href="#DocuLink"> DocuLinks </a>
+        <a href="#Emoji "> Emojis & Entities </a>
+        <a href="DiaMark">  Diacritical Marks </a>
+        <a href="#Tables"> Tables </a>
+        <a href="#List"> Lists </a>
+        <a href="#Semtags "> Semantic Tags </a>
+        <a href="#IDclass"> ID & Classes </a>
+        <a href="#Forms"> Forms </a>
+        <a href="#Select"> Select Options </a>
+        <a href="#Radio"> Radio Buttons </a>
+        <a href="#ChkBox"> Check Boxes</a>
+        <a href="#DataList "> Datya Lists </a>
+        <a href="#FieldLegend"> Fieldsets & Legends </a>
+        <a href="#WebHost"> Web Hosting </a>
+        <a href="#CSSIntro "> CSS Intro </a>
+        <a href="#CSS Font"> CSS Fonts  </a>
+        <a href="#Chrome Dev"> Chrome Developer Tools  </a>
+        <a href="#CSS Back"> CSS Backgrounds  </a>
+        <a href="#NavBar"> Navigation Bars  </a>
+
+    </nav>
+</div>
     <!-- Which elements are which-->
     <div>
         <p> P tag elements represent a new paragraph</p>
@@ -293,7 +324,7 @@ src="/https://download-files.wixmp.com/raw/2e7483_f9c6b1e79a8543ca84258615a888eb
 
 <!-- ID and Classes -->
 <div>
-<h2> IDs and Classes </h2>
+<h2> IDs and Classes (CSS) </h2>
 
 <h3> Classes </h3>
 <p> The class attribute is often used to point to a class name in a stylesheet. (CSS). It can also be used by a Javascript (JS) to access and manipulate elements with the specific class name. The way it would be used is "< (element) class="" >" it can be used as a shorcut of sorts intead of using "< (element) style=""> to make writing in HTML format faster. " </p>
@@ -967,7 +998,7 @@ Finally we have the "< i class="fa-solid fa-house"> < /i>". Which is the code im
 <p> This is a great way to edit and test things in the Chrome Developer tools that you can potentially use in your own coding.</p>
 </blockquote>
 
-<!-- CSS Day 2 (Backgrounds and Bodys)-->
+<!-- CSS (Backgrounds, Bodys and Display)-->
 <div>
 <h3> Background and Borders with CSS </h3>
 
@@ -994,11 +1025,79 @@ If we were to use the tag "< "element", id name or class {
 </p>
 
 <p>
-    If an image has a transparent background then we could add a colour too it ourselves. 
+    If an image has a transparent background then we could add a colour too it ourselves. To do this we would use the CSS code
+    <br>  "body {
+    <br>    background-image: url(FILEpath);
+    <br>    background-color:rgba(138,223,96,0.796); 
+    <br>    }"
+        <br>
+    We could also insert a gradient mode into the code. For example:
+   <br> background-image:
+    <br>  linear-gradient (to top, rgba(138,223,96,0.796) 
+    <br> url('FILEpath'); }"
+    <br>
+</p>
+
+<h2> Box model, Margin and Padding. </h2>
+
+<h3> CSS Box Model</h3>
+<p>
+CSS box models construct themselves on 4 major parts of coding. Those being :- 
+<br> Content - This is the contents of the box be it text or images.
+<br> Padding - This is a transparent border that creates a space around the contents.
+<br> Border - A border that goes around the contents and the padding.
+<br> Margin - The margin clears an area outside of the border that is transparent.
+ </p>
+
+<p> 
+<element,name or class> {
+  margin: "" ; outside the border
+  padding: "" ; inside the border
+}
+</p>
+
+<p> 
+For the two, there are shorthand ways to vary the amount of each side. (top, bottom, left and right). These methods save you from copying - 
+<br>margin-top:0px;
+<br>margin-right:0px;
+<br>margin-bottom:20px;
+<br>margin-left:2px;
+<br>
+1) Margin/padding: 10px; - This applies 10px to all 4 sides of the element.
+2) Margin/padding: 10px 20px; - This applies "10px" to the top and bottom. Applies "20px" to the left and right.
+3) Margin/padding: 10px 5px 20px 5px; - This applies "10px" to the top, "5px" to the right, "20px" to the bottom and "5px" to the right. 
+<br> The "value" can also be percentages instead of pixels. The application of the values go clockwise.
+
+</p>
+
+<p> The difference is that with the values being in pixels, this will give a set number for the edit to happen on.
+     Whereas with percentages, this takes into account the users device dimensions of the screen and adjusts the values accordingly.</p>
+
+
+<h3> Display.</h3>
+
+<p>
+    The "display" attribute specifies the behavious of tags that are paired with it. 
+    This allows us to alter the visual state of what is being used from its default "block" which would use all of the available space on a line even if it isn't necessary.
+</p>
+
+<p>
+    We can alter the "display" of a tag or an element into 3 alternatives.
+    <br>1) Inline - This displays an element or a tag with the space that it requires and no more, allowing other text to use up the remaining space on a line. Removing any affect of the height and width values.
+    <br>2) Block - This displays the tag or element as a default block that will start on a new line and spare no space on said line.
+    <br>3) Inline-Block - This gives us the freedom to alter the width and height desired to place the tag or element on an inline level and in forms of blocks.
+</p>
+</div>
+
+<!-- Navigation Bars-->
+<h2> Navigation Bars </h2>
+
+<p>  
+
 </p>
 
 
-</div>
+
 
 
 

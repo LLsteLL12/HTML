@@ -1,0 +1,66 @@
+/* If you ar egoing to be using multiple similar ids / classes 
+it might be useful to name them with the position on the page that they are located. */
+
+body {
+    background-color:burlywood;
+    color:rgb(30, 135, 210);
+}
+
+header {
+    background-color: rgb(4, 71, 30);
+    position:  ;
+}
+
+.header {
+    display:inline;
+}
+
+.links {
+    margin-right: %;
+}
+
+#img-header {
+    height: 100px;
+}
+
+h1{
+    display: inline;
+    margin-left: 38%;
+    font-family: 'Alkatra', cursive; 
+}
+
+nav {
+    display: inline;
+    margin-left: 23%;
+    font-family: 'Crimson Text', serif; 
+}
+
+
+a{
+    color: chocolate;
+    margin-left:1%;
+    font-family: 'Crimson Text', serif; 
+    text-decoration: none;
+}
+
+a:hover{
+    color: aqua;
+}
+
+
+
+/* Floating menu */
+
+#float-menu {
+background-color: antiquewhite;
+margin-top: ;
+display: inline;
+}
+
+#float-btn{
+position: fixed; 
+}
+
+#float-btn a{
+display:block;
+}
