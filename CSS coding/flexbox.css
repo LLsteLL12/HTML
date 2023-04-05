@@ -1,0 +1,87 @@
+/* Flex-box */
+
+.parent-container{
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.child-item{
+background-color: white;
+width: 20%;
+margin-bottom: 5%;
+
+}
+
+.child-item>img{
+    width: 90%;
+    border-radius: 10%;
+    margin-left: 5%;
+}
+
+.child-item>h5{
+    text-align: center;
+}
+
+.child-item>p{
+    text-align: center;
+}
+
+.child-item>ul{
+list-style-type: none;
+display: inline-block;
+padding: 0px;
+/* Could add "text alignment here too"*/
+}
+
+.strawberry{
+    color: red;
+}
+
+
+@media(min-width:500px) { 
+    .strawberry{
+        color: red;
+    }
+}
+
+@media(max-width:900px) {
+    .strawberry{
+        color: red;
+    }
+}
+
+
+
+
+
+
+/* DEVICE PIXELS (How to write the media query for each device.)
+Mobile Devices - 320px - 480px
+@media(max-width:480px) & (min-width: 320px) {
+    .strawberry{
+        color: red;
+    }
+}
+Ipads / Tablets - 481px - 768px
+@media(max-width:768px) & (min-width: 481px) {
+    .strawberry{
+        color: red;
+    }
+}
+Laptops / Small Screens - 769px - 1024px
+@media(max-width:1024px) & (min-width: 769px) {
+    .strawberry{
+        color: red;
+    }
+}
+Desktops / Large Sceens - 1025px - 1200px
+@media(max-width:1200px) & (min-width: 1025px) {
+    .strawberry{
+        color: red;
+    }
+}
+TV / Extra Large Screens - 1201px +
+/*
