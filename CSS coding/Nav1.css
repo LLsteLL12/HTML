@@ -8,7 +8,10 @@ body {
 
 header {
     background-color: rgb(4, 71, 30);
-    position:  ;
+    position: absolute ;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .header {
@@ -16,7 +19,7 @@ header {
 }
 
 .links {
-    margin-right: %;
+    margin-right:0%;
 }
 
 #img-header {
@@ -53,14 +56,46 @@ a:hover{
 
 #float-menu {
 background-color: antiquewhite;
-margin-top: ;
-display: inline;
+margin-top: 5px;
+float: right;
 }
 
 #float-btn{
 position: fixed; 
+background-color:burlywood;
+right: 5px;
+top:30;
+border-radius: 10%;
 }
 
 #float-btn a{
 display:block;
 }
+
+
+/* Visibility  CSS day 4*/
+
+#data1 {
+    visibility: hidden; /* options are hidden, visible*/
+}
+
+p{
+    visibility: visible;
+    display: block; /* if set to "none", the space and text will be removed */
+}
+
+
+/*
+Z-index CSS day 4 
+/*
+
+
+
+
+
+/* z-index:-1 is the tag to reduce the stacking order or increase.
+For example if it was a low number "-1" it would show beneath everthything. This could be a background video/ image.
+If it has a high number it would appear above everything.
+
+
+*/
