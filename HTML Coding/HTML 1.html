@@ -1127,7 +1127,7 @@ For the two, there are shorthand ways to vary the amount of each side. (top, bot
 </div>
 
 
-<!--Flexboxes-->
+<!--Flexboxes--> <!--CSS Day 5 video-->
  <span>
 
     <h2> Flexboxes</h2>
@@ -1198,19 +1198,170 @@ For the two, there are shorthand ways to vary the amount of each side. (top, bot
    </div>
 </span>
 
-<!--Media Queries-->
+<!--Media Queries--> <!--CSS Day 6 video-->
 <main>
 <h2> Media Queries</h2>
 
 <p>
-    Media queries are used in 2 kinds of methodologies. 
-    The first is to determine the scale used for a page on a device.
+    Media queries are used as a rule to apply different styles to 
+    different media types and devices. 
+    Media types also aid us in delovering a more responsive designs accross a spectrum of device types.
 </p>
+
+<p>
+They can be used to check properties such as :-
+<br> - The height and width of a viewport.
+<br> - The width and height of a device.
+<br> - The orientation of a device (potrait or landscape)
+<br> - The resolution of a device screen.
+<br> 
+Media queries can be used in code to change how a page looks on different devices dependent on the screen size to ensure proper and fluent use of said page. 
+</p>
+
+<p> 
+    The way we would create a media query is to use the following code :-
+    <br>
+<br>   @media(max-width:480px) and (min-width:320px) {
+<br>        body{
+<br>            background-color: pink;
+        }
+<br>        
+<br>        .parent-container{
+<br>            display:flex;
+<br>            justify-content:space-evenly;
+<br>            flex-direction: row;
+<br>            flex-wrap: wrap;
+<br>            background-color: black;
+        }
+        
+<br>
+<br>
+This code would be for the device parameters of a mobile phone or "small screen" as the "max-width" and "min-width" are set as the general pixel sizes of a mobile screen.
+These can be altered to register a different screen size and maybe have a different style to fit the new perameters. For instance, on a large screen (1025px - 1200px); a 
+webpage may have a fully accessible menu accross the top of the screen to direct you too a certain page. However due to a mobile device having sucha reduced pixel size (320px - 480px); you might consider putting the menu into a hamburger menu state instead for ease of access to the user.
+<br><br>
+See <a href="https://testsigma.com/blog/css-breakpoints/">Testsigma  </a> for a detailed breakdown of media queries.
+</p>
+
+
 </main>
 
+<!--nth Child Pseudo Selectors--><!--CSS Day 6 Part 1 video-->
+<article>
+<h2> nth Child Pseudo Selectors </h2>
+
+<p> 
+    The ":nth-child(n) selector" matches ever element that is the nth child (regardless of the parent).
+<br> It has 3 uses and those are:-
+<br> - n = 1 2 3 4 5 6 7 
+<br> - 3n = 3 6 9 12 15 18
+<br> - 3n-2 = 1 4 7 10 13 16 19
+</p>
+
+<p> 
+    n = a number, keyword (odd or even), or a formula such as "3n nth term".
+    The code would be written using an < html element, id, class>:nth-child(< number,keyword or formula>) { "other code"}  
+<br> Items inside of the " { } " will affect the targeted items.
+</p>
+<p> 
+   For instance. If we had a webpage with 3 sets of paragraphs on it then used the following:-
+   <br>
+   #IDname :nth-child(2) {
+    color: gold;
+   } 
+   <br><br>
+   Then the 2nd paragraph text would be changed to the colour gold as the number after ":nth-child" being "(2)" it allocates the change to the second paragraph.
+   If the item "(2)" was changed too "(odd)", then paragraphs thats are odd numbers (1, 3, 5, 7) would be chnaged to gold. Vice versa with "(even)". 
+   <br><br>
+   If we were to use "3n", then it would reciprocate the maths equivalent of "3n" and alter every 3rd sequenced item. "n" being the multiple used to identify a particular sequenced item.
+   "3n-2" would use a similar equivalent apart from it would take 2 from each item. Instead of starting at the third item, it would start the changes from the first. If we were to change the "2" to a different number, then that would be the step change to the sequence of alterations.
+   For example: If instead of "3n-2" , we had "3n-1" then it would start the sequential changes from the second item, then the fourth, then the sixth.
+</p>
+</article>
+
+<!--": :before/:after" Selectors Day 6 Part 2 video-->
+<span>
+<h2> :before / :after Selectors</h2>
+<p>
+These selectors are used to alter the display of a specific part of text using a defining piece of "content". 
+They can be used in terms of selecting a certain element of text like "article", "p" or any main body of text. 
+However, if you were to use an image with these tags then if you had content within the quotation marks then the image would be restricted to the amount of text contained. 
+</p>
+
+<p>
+    The main use of the ":before :after" tags is to direct the user to a section that may be more relevent to themselves.
+    For instance, on an ecommerce website as you may be looking at something there may be a pop up stating that people who viewed an item also viewed another. Likewise with news articles.
+</p>
+
+<p>
+    The way we would write this code would be :-
+<br> "element" : :before {
+<br>   content: "specified text/image here" ;
+<br>   background-color(or image): ;
+<br>   width: ;
+<br>   -other attributes -      
+    }
+<br><br>
+     "element" : :after {
+<br>   content: "specified text/image here" ;
+<br>   background-color(or image): ;
+<br>   width: ;
+<br>   -other attributes -  
+    }
+    (See CSS day 6 Part 2 for visual aid)
+</p>
+</span>
+
+<!--box shadow and Text shadow-->
+<article>
+    <h2> Box and Text Shadows</h2>
+    <p>
+        These elements are self explanatory in terms of giving a shadow to a form of container using "box" (header, footer, div, article etc.) and a main body of text using "text" (heading, h1/2/3... paragraph etc ).
+        The rules for each are identicle apart from the "box shadow" has the ability to have an inset shadow.
+    </p>
+    <p>
+        In order for them to work, they require 2 values:
+       - h-offset = The horizontal offset of the shadow Positive values = right, negative values = left.
+       - v-offset = The verticle offset of the shadow. Positive values = below, negative values = above.
+    </p>
+
+    <p>
+        There are additional values we can add such as :
+        - color - For example, using red, hex or rgba value. This is required if you are using Safari
+        - blur - The blur radius.  The higher the numbered value, the more blurred the shadow will appear.
+        - spread - The spread radius is the size of the shadow. (positive values increase the size of the shadow. Whereas negative values decrease the size of the shadow).
+        - inset - This changes the shadow from an outer appearing shadow (outset), to an inner appearing shadow (inset)
+    </p>
+
+    <p>
+The way we would write this into code woukd be as follows:
+<br>
+ Box-shadow
+  element{
+    box-shadow: h-offset v-offset / blur, spread, color, inset; (These will be in pixel values taken in that specific order.)
+}
+<br><br>
+For example:-
+div{
+    box-shadow: 50px -50px 10px 20px rgba(160, 9, 9, 0.5) inset;
+}
+    </p>
 
 
-
+    <h3>  Text Shadows</h3>
+    <p>
+The text-shadow property adds a shadow specifically to text.
+<br>
+The values we would use would be the same as for a "box shadow" except it would be specified for a text element..
+<br><br>
+For example:-
+<br>
+h1{
+    text-shadow: 50px 50px 10px 20px rgba(103, 9, 9, 0.5) inset;
+}
+</b>
+</p>
+</article>
 </body> 
 </html>
 
