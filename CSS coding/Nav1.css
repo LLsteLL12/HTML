@@ -20,6 +20,7 @@ header {
 
 .links {
     margin-right:0%;
+    color: black;
 }
 
 #img-header {
@@ -40,7 +41,7 @@ nav {
 
 
 a{
-    color: chocolate;
+    color: green;
     margin-left:1%;
     font-family: 'Crimson Text', serif; 
     text-decoration: none;
@@ -85,10 +86,12 @@ p{
 }
 
 
+#about {
+    text-align: center;
+    background-color: black;
+}
 
 /* z-index:-1 is the tag to reduce the stacking order or increase.
 For example if it was a low number "-1" it would show beneath everthything. This could be a background video/ image.
 If it has a high number it would appear above everything.
-
-
 */

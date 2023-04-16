@@ -1,0 +1,81 @@
+body {
+    background-color: black;
+    color: silver;
+}
+
+.matrix-class{
+    transform: 5s;
+}
+
+/*Matrix (ScaleX (), SkewY(),SkewX(), ScaleY(), TranslateX, TranslateY() )*/
+/*Translate in South East direction*/
+.matrix-class:hover{
+    transform:matrix(1, 0, 0, 1, 150, 50);
+    -ms-transform: matrix(1, 0, 0, 1, 200, 30); /* Used for internext explorer 9 */
+    -webkit-transform: matrix(0.5, 0, 0, 0.5, 150, 50); /* Used for Safari and Chrome */
+}
+
+
+/*Mirror image (Reflection)*/
+#matrix-img:hover {
+    transform:matrix(-1, 0, 0, 1, 0, 0);
+    -ms-transform: matrix(-1, 0, 0, 1, 1, 1); /* Used for internext explorer 9 */
+    -webkit-transform: matrix(-1, 0, 0, 1, 1, 1); /*Used for Safari and Chrome */
+}
+
+.transformed{
+    -webkit-transform:rotate3d(0, 0, 0, 0deg); /* Chrome, Safari, */
+    transform:rotate3d(0, 0, 0, 0deg); /* Standard syntax */
+    transition:transform 3s;
+}
+
+/*For all 3d transformations we need 3 values, X,Y,Z in that order. The rotate needs the
+ "angle rotate3d(X, Y, Z, A)", scale/translate (X, Y, Z)  */
+
+ .transformed:hover{
+    transform:rotate3d(-2, -1, -2, -360deg); /*Standard syntax*/
+   /* transform:scale3d(3, 2, -3);
+    transform:translate3d(42px, -62px, -1350px); */
+ }
+
+
+
+
+
+
+ .transformedsizeup{
+    -webkit-transform:rotate3d(0, 0, 0, 0deg); /* Chrome, Safari, */
+    transform:rotate3d(0, 0, 0, 0deg); /* Standard syntax */
+    transition:transform 3s;
+}
+
+ .transformedsizeup:hover{
+    transform:scale3d(3, 2, -3);
+ }
+
+
+
+
+ .transformedsizeu{
+    -webkit-transform:rotate3d(0, 0, 0, 0deg); /* Chrome, Safari, */
+    transform:rotate3d(0, 0, 0, 0deg); /* Standard syntax */
+    transition:transform 3s;
+}
+
+ .transformedsizeu:hover{
+    transform:translate3d(42px, -62px, -135px);
+ }
+
+
+
+ /*body {
+    overflow-x:hidden;
+ }*/
+
+
+
+
+ 
+
+
+

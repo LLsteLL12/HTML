@@ -383,7 +383,6 @@ There are 3 clashes between the color sets. However, because the ID is at the to
 <form action="/Submit Form Button.Html" target="_blank">
     <label for="first"> First Name: </label>
     <input type="text" id="first" name="first" placeholder="First Name or Title" minlength="2" maxlength="20" required> 
-
     <!-- Using the break element makes the next label go onto the next line-->
 <br>
     <label for="last"> Last Name: </label>
@@ -391,13 +390,13 @@ There are 3 clashes between the color sets. However, because the ID is at the to
 <br> 
     <label for="Email"> Email Address: </label>
     <input type="email" id="Email" name="email" placeholder="Email Address">
-    <br> 
+<br> 
     <label for="date"> Enter Your Birthday </label>
     <input type="date" id="birthday" name="birthday" placeholder="DD/MM/YYYY">
-    <br> 
+<br> 
     <label for="phone"> Phone Number </label>
     <input type="number" id="number" name="number" placeholder="Contact Number">
-    <br>
+<br>
     <input type="submit" id="submit" value="Submit Form">
     <input type="reset" value="Reset Form">
 <br>
@@ -1279,7 +1278,7 @@ See <a href="https://testsigma.com/blog/css-breakpoints/">Testsigma  </a> for a 
 </p>
 </article>
 
-<!--": :before/:after" Selectors Day 6 Part 2 video-->
+<!--": :before/:after" Selectors CSS Day 6 Part 2 video-->
 <span>
 <h2> :before / :after Selectors</h2>
 <p>
@@ -1312,7 +1311,7 @@ However, if you were to use an image with these tags then if you had content wit
 </p>
 </span>
 
-<!--box shadow and Text shadow-->
+<!--box shadow and Text shadow CSS Day 6 Part 2 Video-->
 <article>
     <h2> Box and Text Shadows</h2>
     <p>
@@ -1362,6 +1361,320 @@ h1{
 </b>
 </p>
 </article>
+
+<!--Variables and Custom Properties CSS Day 7 Part 1-->
+<div>
+<h2> Variables and Custom Properties </h2>
+
+<p>
+    To start with, the "< html >" tag is also known as the "root" element. Meaning that when we see 
+    ":root{ }" in CSS, it is applicable to the html page as a whole.
+</p>
+<br>
+<p>
+    Now, when we use the ":root { }" code we have access to multiple page wide variables. 
+    Such as colours, which would be written as :-
+    :root {
+<br>    color: var (--blue); - (var(custom property))
+    }
+    <br>
+    The options below define the custom properties.;
+    --white: #fafafa;
+    --blue: #4545e0;
+    --green:rgb(31, 74, 31);
+    --orange: #fd8206;
+    --brown: brown;
+<br><br>
+</p>
+
+<p>
+    The custom variable isn't restricted to colours only, we could use it accross a range of things such as background using :-
+<br> 
+"--Keyword: right;" - This woukld change amn image or text to the right side of the screen. We could change this to align how we wish.
+"--Color: #0000ff;" - This woukld change the colour of text to whatever value is used for a colour.
+<br> The terms "Keyword/Color" are changeable to whatever suits the use.
+"--ComplexValue: 30px, 6px, 40px, 50px;" can be used to refer to the margin sizing we would like an image to be using the "TRBL" format. (Top, Right, Bottom, Left)
+We coulkd also use it in conjunction with attributes like "box-shadow".
+
+
+</p>
+
+
+</div>
+
+<!--Creating animations and Keyframes.-->
+<link rel="stylesheet" href="/CSS coding/Animations.css">
+<span>
+    <h2>Creating Animations and Keyframes.</h2>
+    
+    <p>
+        An animation brings life to our page to life by giving gradual change too an element from one style to another.
+        We can change as many CSS properties you want, as frquently as we woukd like.
+    </p>
+    
+    <p>
+        To use CSS animation, we must first specify some keyframes for the animation using CSS.
+        Keyframes hold what styles the elements will have at certain times and for durations of our choosing.
+    </p>
+    
+    <br><br>
+    
+    <p>
+    We would code it using CSS as follows :-
+    <br>
+    @keyframes simple {
+    <br>from{
+    <br>
+        background-color: blue; }
+    <br>
+    to {
+        background-color:purple; }
+    <br> }
+    
+    button:hover {
+    <br> 
+        color: white;
+    <br>
+        background-color: blue;
+    <br>
+    <br>
+        animation-name: simple; <!-- connects the keyframe by it's name-->
+    <br>animation-duration: 4s; }
+    
+    </p>
+
+    <p>
+        The above code would give us the affect on the button below.
+    </p>
+    <br>
+    
+<button> Blue-Purple in 4s</button>
+
+<br><br><br>
+
+<div id="about">
+
+</div>
+
+
+<p> -------------------ISSUES WITH THE TRANSITIONING PICTURE ANIMATIONS -------------
+</p>
+
+<br><br><br><br>
+
+<h2> 
+    "Carousel" 
+</h2>
+
+<p> 
+    When we mention carousel, it means a series of transitioning actions such as pictures. These would usually evolve through stages of an animation which are generally staged in percentages.
+<br>
+So it would look like this:-
+<br>
+@keyframes carousel {
+<br>
+0%    {background-image: url ('1st picture')
+ }
+<br>
+ 25%   {background-image: url ('2nd picture')
+}
+<br>
+50%   {background-image: url ('3rd picture')
+}
+<br>
+75%   {background-image: url ('4th picture')
+}
+<br>
+100%   {background-image: url ('5th picture') 
+<br>
+}
+<br><br>
+
+#carousel {
+<br> width:100px;
+<br> height:200px;
+<br> animation: carousel 50s infinite;
+<br> }
+</p>
+
+<div id="carousel">
+    
+</div>
+
+
+<h2> Cubic Beziers</h2>
+<p>
+    Cubic beziers are the rate of which we can determine the speed transitions take place.
+    They are generally equally spaced out which would be known as a "Linear cubic bezier". We can change the rates to suit our preferations.
+    <br>
+    The function we would use is the "animation-timing-function: cubic-bezier (.0,.0,.0,.0,)"
+    <br>
+    See <a href="https://cubic-bezier.com"> cubic bezier</a> to play around with the different modes.
+</p>
+
+
+<h2> Transitions</h2>
+<p>
+    Starting with the "transition" property, we would need to specify 2 things. 
+    1) The CSS property we would like to be effected.
+    2) The duration of the effect. This would have to have a value greater than 0.
+</p>
+
+<p> 
+    With a transition effect applied, not only can we alter the colour features of an object, we can change many more properties along with it.
+    For instance:- 
+    <br> 
+    If we were to use the code
+    <br><br>
+    .btn{
+<br>        width: 100px;
+<br>        height:25px;
+<br>        background: green;
+<br>        transition: background-color 3s, width 3s;
+<br>    }
+<br><br>
+<br>    .btn:hover{
+<br>        width:200px;
+<br>        height:75px;
+<br>        background: aqua;
+<br>    }
+</p>
+
+<p> 
+    In format with a form, you can see how it can make a difference to the user. Thus keeping them interacting with the page.
+</p>
+
+
+<label for="first"> First Name: </label>
+<input type="text" id="first" name="first" placeholder="First Name or Title">
+<br>
+<label for="last"> Last Name: </label>
+<input type="text" id="Last" name="last" placeholder="Last Name" required>
+<br> 
+<label for="Email"> Email Address: </label>
+<input type="email" id="Email" name="email" placeholder="Email Address">
+<br> 
+<label for="date"> Enter Your Birthday </label>
+<input type="date" id="birthday" name="birthday" placeholder="DD/MM/YYYY">
+<br> 
+<label for="phone"> Phone Number </label>
+<input type="number" id="number" name="number" placeholder="Contact Number">
+<br>
+<input type="reset" value="Reset Form">
+<br>
+<input class="btn" type="submit" id="submit" value="Submit Form">
+
+<p>
+    We could also use transitions in terms of enlarging text to ensure peoper choice on a page. 
+    By ahving enlarged text as the user hovers this can ensure that the link they are choosing is the desired one.
+</p>
+
+<h2>Transform</h2>
+
+<p>
+    To elevate the life that we bring to our page we can even animate or "transform" items on our page.
+    <br>
+    Using the "Transform" property we can do many things such as:-
+
+
+<br>    - Rotate = Rotate an item on the axis (X or Y).
+This would look like:-
+<br><br>
+
+<img src="/Images/google.png" id="google">
+
+
+<br><br><br>    - Translate = This would give a reflection if you will of the item dependent on the values given for the axis.
+
+<br><br>
+<img src="/Images/strawberry jam.jpg" class="strawberry">
+<br><br><br><br>
+
+
+
+
+
+<br>    - Skew = Alters the viewing angle of an item. This usually only requires one value, either X (horizontal) or Y (vertical). 
+This reflects using positive and negative values in degrees.
+<br><br><br>
+
+<img src="/Images/orange.jpeg" class="orange">
+
+<br><br><br>  - Scale = The viewing size of an item that can increase or decrease dependent on the values used in the funtion. 
+Positive values would increase the sizing and negative values would decrease the scaling. 
+<br><br>
+
+<img src="/Images/Fruit spreads.jpeg" class="fruit">
+
+</span>
+
+<!-- Matrix and Translate CSS Day 8 Part 1-->
+<aside>
+<h2>Matrix</h2>
+    
+    <h3> CSS Day 8 Part 1</h3>
+    
+    <p>
+    Matrix uses six values ( ScaleX (), SkewY (),SkewX (), ScaleY (), TranslateX (), TranslateY () ),
+    to manipulate an item to a position on the screen. as you can see below when you hover the cursor over the image.
+    </p>
+    
+    
+<img src="/Images/Matrix.jpg" class="matrix-class"> 
+
+
+<p>
+    If we wanted to rotate a image on a 3d axis like so
+</p>
+        <img src="/Images/3d cube.png" class="transformed">
+
+        <p>
+            We would use the code :-
+ <br>           .transformed {
+ <br>               -webkit-transform:rotate3d(0, 0, 0, 0deg); /* Chrome, Safari, */
+ <br>               transform:rotate3d(0, 0, 0, 0deg); /* Standard syntax */
+ <br>               transition:transform 3s;
+ <br>           }
+     <br>       
+ <br>           For all 3d transformations we need 3 values, X,Y,Z in that order. The rotate needs the
+                "angle rotate3d(X, Y, Z, A)", scale/translate (X, Y, Z) 
+ <br>           
+ <br>            .transformed:hover{
+ <br>               transform:rotate3d(-2, -1, -2, -360deg);
+ <br>            }
+ <br>               This is the Standard syntax.
+            
+    </p>
+
+    <p>
+        We can also alter the sizing editing the ".transformed:hover {"transform:scale3d(1, 1, -1);"}" too ".transformed:hover {"transform:scale3d(3, 2, -3);"}"
+    </p>
+    <p>
+        That would look like this.
+    </p>
+        <img src="/Images/3d cube.png" class="transformedsizeup">
+    <p>
+        Notice how the use of negative "Z" value has made the image rotate. If it was a positive value the image would simply "zoom in" to enlarge.
+    </p>
+    <p>
+        Using "transform:translate3d(42px, -62px, -1350px);" however, simply manipulates the image too move in a direction given using pixels.
+        The image below will move North East as you hover over it. switch the negative values for positives however and the image will move South West.
+    </p>
+
+        <img src="/Images/3d cube.png" class="transformedsizeu">
+<p>
+    Try it for yourself with different values here. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d"> Thanks too Mozilla.</a>
+</p>
+</aside>
+
+<!--CSS Grid Intro / Creating a Basic Grid-->
+<div>
+<h2>CSS Grid Intro</h2>
+
+
+</div>
+
+
 </body> 
 </html>
 

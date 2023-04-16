@@ -1,0 +1,13 @@
+#Spanbefore::before{
+    content: "This text is used in conjunction with the ID of Spanbefore as a test for my own knowledge on the ";
+    background-color: gray;
+    font: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#spanafter::after{
+    content: "This text is used in conjunction with the ID of Spanafter as a test for my own knowledge on the";
+    background-color: green;
+    font: bold;
+    color: blue;
+}

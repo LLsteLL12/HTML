@@ -1,0 +1,95 @@
+.grid-container{
+    display:grid;
+    grid-template-columns: 150px 50px 150px 50px 150px;
+    grid-template-rows: 150px 50px 150px 50px 150px;
+}
+
+.item1 {
+grid-area: header;
+background-color: green;
+}
+
+.item2 {
+grid-area: section1;
+background-color: aqua;
+}
+
+.item3{
+    grid-area: section2;
+    background-color: aliceblue;
+
+}
+
+.item4{
+    grid-area: section3;
+    background-color: yellow;
+}
+
+.item5{
+    grid-area: footer;
+    background-color: tomato;
+}
+
+
+
+.grid{
+    display: grid;
+
+    grid-template-areas:
+    'header header header header header' 
+   'section1 . section2 . section3'
+   'footer footer footer footer footer'
+    
+    ;
+    /*This should be set up how we see it in format
+    grid-template-areas: 
+         (COLUMN COLUMN COLUMN COLUMN COLUMN)
+   (ROW) 'header header header header header' 
+   (ROW) 'section 1 . section2 . section 3'           ( the fullstops create data free spaces)
+   (ROW) 'footer footer footer footer footer' ;
+   (EACH SET OF SINGLE QUOTES IS A NEW ROW AND EACH WORD IS A NEW COLUMN)
+    */
+
+    gap: 1% 1%; /* Creates space above and below */
+    grid-template-columns: 30% 5% 30% 5% 30%; /* In our grid we have 5 columns so These must equate too 100% and have to have a value for each sections */
+    
+    grid-template-rows: 10% 80% 10% ;
+
+    height: 1000px;
+    
+    max-width: 1450px;
+    
+}
+
+
+#menu{
+
+}
+
+#main{
+
+}
+
+#right{
+
+}
+
+.item1 p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.item2 p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.item3 p{
+ font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;   
+}
+
+.item4 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.item5 p{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}

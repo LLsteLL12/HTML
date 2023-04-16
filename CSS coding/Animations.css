@@ -1,0 +1,191 @@
+@keyframes simple {
+    from{
+        background-color: blue; }
+    to {
+        background-color:purple; }
+    }
+    
+    button:hover { 
+        color: white;
+        background-color: blue;
+    
+        animation-name: simple; /*connects the keyframe by it's name*/
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+     }
+    
+
+
+
+
+
+
+
+     /* HAVING ISSUES WITH THE TRANSITION PICTURES */
+
+     @keyframes about {
+        from {background-image: url(/Images/Fruit\ spreads.jpeg)};
+    
+        to {background-image: url(/Images/orange.jpeg)};
+     }
+
+
+     #about {
+        width:550px;
+        height:660px;
+        animation: about 6s ;
+        }
+
+
+     ISSUE WITH THIS{
+        width: 150px;
+        background-image: url(/Images/Fruit\ spreads.jpeg);
+        animation-name: about ; /*connects the keyframe by it's name*/
+        animation-duration: 2s;
+        animation-iteration-count:infinite;
+     }
+
+     ISSUE WITH THIS{
+        width: 150px;
+        height: 200px;
+        background-image: url(/Images/orange.jpeg);
+        animation-name: about ; /*connects the keyframe by it's name*/
+        animation-duration: 4s;
+        animation-iteration-count: 1 ;
+     }
+
+
+
+
+
+
+
+     @keyframes /* body */  {
+        0%    {color: red;
+                background-color: darkgreen;
+            }
+        25%   {color: orange;
+               background-color:white
+            }
+        50%   {color: blue;
+               background-color:violet;
+            }
+        75%   {color: pink;
+                background-color:grey;
+            }
+        100%   {color: aqua;
+                background-color: red;}
+    }
+    
+    body{
+        background-color: white;
+        animation-name: body;
+        animation-duration: 10s;
+        animation-iteration-count: 2;
+    }
+
+
+
+
+/*
+
+@keyframes "name" {
+    0%    {color: red;
+            background-color: darkgreen;
+        }
+    25%   {color: orange;
+           background-color:white
+        }
+    50%   {color: blue;
+           background-color:violet;
+        }
+    75%   {color: pink;
+            background-color:grey;
+        }
+    100%   {color: aqua;
+            background-color: silver;}
+}
+
+
+This would alter the background color of the whole page through various stages of colours.
+*/
+     
+    
+
+
+
+
+@keyframes carousel {
+    0% {background-image: url(/Images/black\ and\ white\ fruit.jpg) 
+      }
+    25% {background-image: url(/Images/Buy2get1free.jpeg) 
+      }
+    50% {background-image: url(/Images/Fruit\ spreads.jpeg) 
+      }
+    75% {background-image: url(/Images/google.png) 
+      }
+    100% {background-image: url(/Images/orange.jpeg)
+      }
+    }
+    
+    #carousel {
+    width:150px;
+    height:300px;
+    animation: carousel 10s ;
+    }
+
+    .btn{
+        width: 100px;
+        height:25px;
+        background: green;
+        transition: background-color 2s, width 2s;
+    }
+
+    .btn:hover{
+        width:200px;
+        height:75px;
+        background: aqua;
+    }
+
+
+
+    /* ROTATE */
+
+
+.google img{
+    transform: rotateX(0deg); /* translate, skew, scale and rotate*/
+    margin-left: 50%;
+    transition:transform 3s;
+}
+
+.google:hover img {
+    transform:rotate(360deg);
+    margin-left: 50%;
+}
+
+    /* SKEW */
+
+    .orange{
+    max-width: 100px;
+    max-height: 100px;
+    background-color: pink;
+    transform:skew(45deg, 15deg); 
+    }
+
+
+/* SCALE */
+
+.fruit:hover{
+    transform: scale(0.5,0.5);
+    max-height: 100px;
+    }
+
+
+
+/* TRANSLATE */
+
+.strawberry img {
+    max-height: 80px;
+    transform: translate(100px, 0px);
+    transition:transform 4s;   
+}

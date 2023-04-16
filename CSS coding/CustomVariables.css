@@ -1,0 +1,55 @@
+:root {
+    color: var(--green); /*- (var(custom property))*/
+    
+    /*
+    Custom Properties to be used accross the page:-*/
+    --white: #fafafa;
+    --blue: #4545e0;
+    --green:rgb(31, 74, 31);
+    --orange: #fd8206;
+    --brown: brown;
+    --beige:rgba(240, 215, 106, 0.658);
+    --black: rgba(0, 0, 0, 0.5);
+
+
+    /*bakckground*/   
+    --somekeyword:right;
+    --somecolor:#070707;
+
+    --someComplexValue: 30px, 6px, 40px, 50px; /*TBRL (Top, Right, Bottom, Left)*/
+    
+
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+
+
+body{
+    --red:#f83d24;
+    --shadow: rgba(54, 54, 54, 0.5);
+    margin-block: var(--someComplexValue);
+    /*General Stylings*/
+}
+
+#home{
+    box-shadow: var(--someComplexValue);
+}
+
+.container {
+    color:var(--orange);
+}
+
+button{
+    background-color: var(--white);
+    color: var(--red);
+    margin: var(--someComplexValue);
+/*white becomes active when its inside the */
+}
+
+
+nav {
+    color: var(--beige); 
+    font-size: smaller;
+    font-family: 'Courier New', Courier, monospace;
+}

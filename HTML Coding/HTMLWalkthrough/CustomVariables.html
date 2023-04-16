@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS coding/CustomVariables.css">
+</head>
+<body>
+    
+<!--CSS Intro-->
+<main>
+    <h1> Intoduction to CSS </h1>
+    
+    <p> To begin. we link the HTML files with CSS using the following code inside the "head" tag :- 
+        < link rel="stylesheet" href="/CSS coding/CSS Day2.css" </p>
+    
+    <h2> The Relationships between tags and elements</h2>
+    
+    <p>
+        Quick break down of relationships
+        <br>
+        <br>< body> = parent to < header> (< header is considere a child>) grand parent too < h1>, < div>, < img src> but great grandparent too < p>
+        <br> < header> = child but also has children - < h1>, < p> , < img src> (otherwise known as siblings)
+        <br> Sibllings = grandchildren to < body>
+        <br><br>
+        <br> < body> is the parent
+        <br>< header> child of < body>
+        <br>< Img src> < h1> < div> are grandchildren of < body> but children of < header>
+        <br>< p> is the great grandchild of < body>
+        <br>
+            For example 
+            <br>< section> <!- This section is a child of the body tag->
+            <br>   < nav> <!- This section is a grandchild of the body tag ->
+            <br>    < a href="">< /a> <!- This section is a great grandchild of the body tag ->
+            <br>    < a href="">< /a>
+            <br>    < a href="">< /a>
+            <br>< /nav>
+            <br>< /section>
+    </p>
+    
+    <br>
+        <h2> Combinator Selectors </h2>
+        <br>
+        <p>
+        Combinator Selectors use a preset code of rulings to be able to select elements based on a specific relationship between them.
+        </p>
+        <p>
+        Decendent selector (space) ELEMENT ELEMENT e.g div p { styleCode }
+        <br>div p{         --- Any paragraph that is a decendent of a div will give the following ---
+        <br>font-weight: 300;
+        <br> color : pink;
+        }
+        </p>
+        <p>
+        <br>    
+        Child selector (>) ELEMENT > ELEMENT {} e.g div>p{styleCode} p is a child of div 
+        <br>div>p{         --- Any paragraph that is a CHILD decendent of a div will give the following ---
+        <br>font-weight: 300;
+        <br> color : pink;
+        }
+        </p>
+        <p>
+        <br>
+        Adjacent sibling selector (+) next to the target ELEMENT + ELEMENT{}
+        <br>div+p{         --- Anything that is a immediatley above or below (adjacent) the div but on the same level will give the following ---
+        <br>font-weight: 300;
+        <br>color : pink;
+        }
+        <br>
+        For example 
+        <br>< div class ="">
+        <br>< p> word < /p> ----IMPACTED BY SELECTOR
+        <br>< div class="">
+        <br>  < img src="/file/filename" alt="alternative">
+        <br></ div>
+        <br>< p> word < /p> ----ALSO IMPACTED BY SELECTOR AS IT IS ADJACENT
+        <br>< div class=""> ---- NOT AFFECTED AS IT IS THE SAME LEVEL AS INITIAL DIV
+        <br>     < img src="/file/filename" alt="alternative">
+        <br>     </ div>
+        <br>
+        </p>
+       <p>
+            General sibling selector (~) anything on the sibling ELEMENT ~ ELEMENT{}
+        <br>
+        div~p{         --- Anything that is a general sibling after the div will give the following ---
+            <br> font-weight: 300;
+            <br> color : pink;
+        }
+        <br>
+        For example 
+        <br>< div class ="">
+        <br>< p> word < /p> 
+        <br>< div class="">
+        <br>    < img src="/file/filename" alt="alternative">
+        <br>< /div>
+        <br>< div class=""> 
+        <br>     < img src="/file/filename" alt="alternative">
+        <br>     < /div>
+        <br>     < p> word < /p> ----IMPACTED BY GENERAL SELECTOR
+        <br>     < p> word < /p>  ----IMPACTED BY GENERAL SELECTOR
+        <br>     < p> word < /p>  ----IMPACTED BY GENERAL SELECTOR
+        <br>
+        Sibling = same level of power in the code hierarchy.
+    </p>
+        
+        <p><br>
+        Pseudo-class selectors (select elements based on a certain state)
+        <br>
+        Style an element for when the user hovers the mouse over. -- Typically used with forms
+        Style visited and unvisited links differently -- Typically used with hyperlinks
+        Style an element when it gets focus
+        <br>
+        .btn,
+        <br>button {
+        <br>    background-color: red;
+        <br>    color:pink;
+        }
+        <br>
+        .btn:hover,
+        <br>input:hover,
+        <br>button:hover {
+        <br>    background-color: pink;
+        <br>    color:red;
+        
+        <br>a:link {
+        <br>        color: lightblue;   }
+        }
+        <br>
+        a:visited {
+        <br>color:purple;
+        }
+    </p>
+    
+    </main>
+    
+
+    
+<!-- CSS  (Fonts)-->
+<div>
+    <h2> CSS Coding Fonts and Icons </h2>
+    <p> CSS style sheets are a set of codes written to use as a way of styling a page with HTML coding on it. This would be considered a ruleset. Using these rulesets we can give our webpages a bit of personality by simply adding the CSS code into the "head" tag of the HTML sheet.
+        When writing in CSS format we always start with the property which is generally in a blue colour. After the colon, would be the value the property that will be take on by the item.
+       <br> For eample :-
+    <br>If in CSS code we had :
+    <br>"div {
+        <br>font-weight:700;
+        <br>color:cornflowerblue;
+        <br>font-size:18px
+        <br>}"
+        <br> This would change any text contained in "div" tags within a HTML document to be bold (font-weight: 700;)
+     have the text chnaged to cornflowerblue (color:cornflowerblue;) and have a font size of 18 pixels (font-size:18px). This depends on the rules explained previously on the specificity and hierarchy of the "id" (#"idName") and "class" (."ClassName") attributes. </p>
+     <br>
+     <h6> Inline, internal and external CSS </h6>
+     <br>
+    <p> Internal = In HTML document using "style" e.g style="color: blue, font-fsmily:Arial;"
+    Internal = CSS written inside a CSS stylesheet in the coding software used by the user.
+    
+    External = CSS imported by an external source. 
+    For example in this case we will be using external CSS from Googlefonts.com and fontawesome.com.
+    </p>
+    
+    <p>  Starting our journey with CSS we will be looking at how to add or chnage fonts using websites <a href="https://www.googlefonts.com"> Google fonts </a> and <a href="https://fontawesome.com"> Font Awesome</a>
+    </p><br>
+    <h5> Google fonts</h5>
+    <p>
+    Using Google fonts we would load up the webpage. Select our fonts and then, just like the imported video method. We would use the "head" tags in the boilercode to insert the embedded code we have copied from google fonts. 
+    It would look as follows:-
+    </p> 
+    
+    
+    <p>
+    < head>
+    <br>
+            < meta charset="UTF-8">
+        <br> < meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <br> < meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <br>
+        < link rel="preconnect" href="https://fonts.googleapis.com">
+    <br> < link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <br> < link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Crimson+Text&family=Josefin+Sans&family=Roboto:wght@500&display=swap" 
+    rel="stylesheet">
+        <br> < title>Document< /title>
+    <br> < /head>
+    </p>
+    
+    <p>
+        To link the HTML file code with the CSS file code we would use the following line:-
+    "< link rel="stylesheet" href="style.css"> "
+    </p>
+    
+    <p>
+        < link rel="stylesheet" href="/CSS coding/CSS 1 STYLES.css"> - This uses a file path to locate where the CSS code is to shortcut the styling.
+        <br> 
+        <link rel="stylesheet" href="/CSS coding/CSS 1 STYLES.css">
+    This will change which tags and elements have the coding included to that relayed in course with the CSS stylesheet.
+    For this, I have created the element "h4" and I have styled it - <h4>Like this.</h4> - 
+    </p>
+    
+    <p> The reason we put the CSS code link into the "head" element is because on tne CSS codesheet, the coding will refer to different elements in HTML and will automatically occur once written.</p>
+    
+    <br> 
+    
+    <h3> Font Awesome</h3>
+    
+    <p> Font awesome is similar to Google fonts however, instead of using fonts. Font Awesome uses icons instead. Many of which are used in todays technology. There are the typical icons and even social media icons too making it a really useful site too use.</p>
+    
+    <p> Font Awesome can be useful for enforcing a theme of a page with icons. Saving space, coding time and keeping the user directly interacting with the interface.</p>
+    
+    <p> To use Font Awesome we would simply sign up for the free kit code and follow the instructions to allow cross communication between the Html file and the server. This is as simple as copying and pasting the unique code into the "head" tag of our HTML page.
+        <br> From there, we would select an icon from Font Awesome and then  add it into our code. 
+        For example on a "Nav Bar" you might want to use icons instead of words or alongside them so :- 
+    < nav class="nav1">
+    < a href="#home"> Home < i class="fa-solid fa-house"> < /i> < /a>
+    < /nav>
+    <br> 
+    With this line we have the "class="nav1"" acting for the set code from CSS 
+    We have the href "#home" for a specific CSS programme.
+    Finally we have the "< i class="fa-solid fa-house"> < /i>". Which is the code imported from Font Awesomes page to represent the "Home" icon.
+    <i class="fa-solid fa-house"> </i> 
+    
+    </p>
+    </div>
+    
+    <!--Chrome developer tools-->
+    <blockquote>
+    <h3> Chrome developer tools.</h3>
+    
+    <p> To get to Chrome developer tools: click the elipsis in the browser and then scroll down too "More tools". From here go too "developer tools". This will open a window where you can then see the elements of the current webpage you're on. Using this you can click on a piece of a page and see the HTML coding that makes it part of the webpage including any other coding languages that work in conjunction like CSS.</p>
+    
+    <p> This is a great way to edit and test things in the Chrome Developer tools that you can potentially use in your own coding.</p>
+    </blockquote>
+    
+    <!-- CSS (Backgrounds, Bodys and Display)-->
+    <div>
+    <h3> Background and Borders with CSS </h3>
+    
+    <p> 
+    Pages are initialised with a basic white background that we can edit or customise to give our page more of a personality.
+        Backgrouynnds and borders allow us to fill our page with colour, clipped or resized imagery and many more ways.
+    These styles can also decorate borders with lines, images, rounded or squared.
+    </p>
+    
+    <p> 
+    If we were to use the tag "< "element", id name or class {
+     <br>   background: <!-- This is the shorthand command that can deal with the basic styling -->
+    <br>SHORTHAND 
+    <br>body { 
+    <br>background: url('File path to selected image')  no-repeat center 100px;
+    <br>}
+    <br>#background-vid{
+        <br>position: fixed;
+        <br>z-index:-1;
+        <br>width:100px;
+        <br>height:100%;
+    <br>}
+    <br> When we loaded our page we would have an image that we have inserted into the file path("background:url('FilePath')"),with the repeater disabled ("no-repeat") placed into the cemter of the page ("center") with a size of 100 pixels (100px).
+    </p>
+    
+    <p>
+        If an image has a transparent background then we could add a colour too it ourselves. To do this we would use the CSS code
+        <br>  "body {
+        <br>    background-image: url(FILEpath);
+        <br>    background-color:rgba(138,223,96,0.796); 
+        <br>    }"
+            <br>
+        We could also insert a gradient mode into the code. For example:
+       <br> background-image:
+        <br>  linear-gradient (to top, rgba(138,223,96,0.796) 
+        <br> url('FILEpath'); }"
+        <br>
+    </p>
+    
+    <h2> Box model, Margin and Padding. </h2>
+    
+    <h3> CSS Box Model</h3>
+    <p>
+    CSS box models construct themselves on 4 major parts of coding. Those being :- 
+    <br> Content - This is the contents of the box be it text or images.
+    <br> Padding - This is a transparent border that creates a space around the contents.
+    <br> Border - A border that goes around the contents and the padding.
+    <br> Margin - The margin clears an area outside of the border that is transparent.
+     </p>
+    
+    <p> 
+    <element,name or class> {
+      margin: "" ; outside the border
+      padding: "" ; inside the border
+    }
+    </p>
+    
+    <p> 
+    For the two, there are shorthand ways to vary the amount of each side. (top, bottom, left and right). These methods save you from copying - 
+    <br>margin-top:0px;
+    <br>margin-right:0px;
+    <br>margin-bottom:20px;
+    <br>margin-left:2px;
+    <br>
+    1) Margin/padding: 10px; - This applies 10px to all 4 sides of the element.
+    2) Margin/padding: 10px 20px; - This applies "10px" to the top and bottom. Applies "20px" to the left and right.
+    3) Margin/padding: 10px 5px 20px 5px; - This applies "10px" to the top, "5px" to the right, "20px" to the bottom and "5px" to the right. 
+    <br> The "value" can also be percentages instead of pixels. The application of the values go clockwise.
+    
+    </p>
+    
+    <p> The difference is that with the values being in pixels, this will give a set number for the edit to happen on.
+         Whereas with percentages, this takes into account the users device dimensions of the screen and adjusts the values accordingly.</p>
+    
+    
+    <h3> Display.</h3>
+    
+    <p>
+        The "display" attribute specifies the behavious of tags that are paired with it. 
+        This allows us to alter the visual state of what is being used from its default "block" which would use all of the available space on a line even if it isn't necessary.
+    </p>
+    
+    <p>
+        We can alter the "display" of a tag or an element into 3 alternatives.
+        <br>1) Inline - This displays an element or a tag with the space that it requires and no more, allowing other text to use up the remaining space on a line. Removing any affect of the height and width values.
+        <br>2) Block - This displays the tag or element as a default block that will start on a new line and spare no space on said line.
+        <br>3) Inline-Block - This gives us the freedom to alter the width and height desired to place the tag or element on an inline level and in forms of blocks.
+    </p>
+    </div>
+    
+    <!-- Navigation Bars--> <!-- CSS Day 3 Video-->
+    <div>
+    <h2> Navigation Bars </h2>
+    
+    <p>  
+    
+    </p>
+    </div>
+    
+    
+    <!--Visibility and Z-Index=--> <!-- CSS Day 4 video-->
+    <div>
+    <h2> --Visibility and Z-Index Explained.</h2>
+    
+    <h3> --Visibility</h3>
+    
+    <p> 
+        The "Visibility" property specifies whether or not an element is going to be visible to the user.
+    
+        Visible = The default value meaning that the element will be visible to the user. 
+        Hidden = The element is not going to be vidible to the user. This element will still use space on the page.
+        Collape = This property is usually only reserved for table properties like "table rows", "row gorups" etc.
+        This will only remove a row or a column but if it is used on other elements then they will default to the "hodden" property.
+    </p>
+    
+    <br>
+    <h3> Z-Index</h3>
+    
+    <p>
+        Z-Index is a stacking order property we can put on an item to give it a particular order to show under or over other items on a page.
+        The theory is that the lower number included in the Z-Index then the lower in the "stack" it will be to show on the page.
+        However, the higher the number included in the Z-Index then the higher in the "stack" it will show.
+        These numbers can be positive or negative but usually, they start from 0 as default.
+        When coding a page, the Z-Index will be used to alter the natural stack of a page from what it coded first - last.
+    </p>
+    </div>
+    
+    
+    <!--Flexboxes--> <!--CSS Day 5 video-->
+     <span>
+    
+        <h2> Flexboxes</h2>
+        <p>
+       Flexboxes are used to contain a number of items as almost like a command list.
+       It is used as a parent container and will command child elements and tags what to do.
+        </p>
+       
+       
+        <p>
+           There are a number of different attributes e could use alongside "flex"
+           see <a href="https://flexboxfroggy.com/"> Flexbox Game </a> or <a href="https://www.w3schools.com/css/css3_flexbox_container.asp"> walkthrough</a> for an interactive learning game or a walkthrough of how to use Flexboxes.
+        </p>
+             
+       
+        <br>
+           An example of this wpould look like :-
+        <br>
+           < div class="parent-container">
+        <br>    < div class="child-item">
+        <br>        < p> Item 1< /p>
+        <br>    < /div>
+        <br>    < div class="child-item">
+        <br>         < p> Item 2< /p>
+        <br>    < /div>
+        <br>    < div class="child-item">
+        <br>         < p> Item 3< /p>
+        <br>    < /div>
+           < /div>
+       
+           
+               This would look like so (Remember the CSS codestyle has already been applied)
+        <br>
+           <div class="parent-container">
+               <div class="child-item">
+                   <h5> Title 1</h5>
+                   <p>Child Item 1</p>
+                   <img src="/Images/Strawberries.jpeg" alt="Strawberries">
+                   <ul>
+                       <li> Small (x4)</li>
+                       <li> Medium (x6)</li>
+                       <li> Large (x8)</li>
+                   </ul>
+               </div>
+       
+               <div class="child-item">
+                   <h5> Title 2</h5>
+                   <p>Child Item 2</p>
+                   <img src="/Images/orange.jpeg" alt="Oranges">
+                   <ul>
+                       <li> Small (x4)</li>
+                       <li> Medium (x6)</li>
+                       <li> Large (x8)</li>
+                   </ul>
+               </div>
+       
+               <div class="child-item">
+                   <h5> Title 3</h5>
+                   <p>Child Item 3</p>
+                   <img src="/Images/peach.jpeg" alt="Peaches">
+                   <ul>
+                       <li> Small (x4)</li>
+                       <li> Medium (x6)</li>
+                       <li> Large (x8)</li>
+                   </ul>
+               </div>
+           </div>   
+       </div>
+    </span>
+    
+    <!--Media Queries--> <!--CSS Day 6 video-->
+    <main>
+    <h2> Media Queries</h2>
+    
+    <p>
+        Media queries are used as a rule to apply different styles to 
+        different media types and devices. 
+        Media types also aid us in delovering a more responsive designs accross a spectrum of device types.
+    </p>
+    
+    <p>
+    They can be used to check properties such as :-
+    <br> - The height and width of a viewport.
+    <br> - The width and height of a device.
+    <br> - The orientation of a device (potrait or landscape)
+    <br> - The resolution of a device screen.
+    <br> 
+    Media queries can be used in code to change how a page looks on different devices dependent on the screen size to ensure proper and fluent use of said page. 
+    </p>
+    
+    <p> 
+        The way we would create a media query is to use the following code :-
+        <br>
+    <br>   @media(max-width:480px) and (min-width:320px) {
+    <br>        body{
+    <br>            background-color: pink;
+            }
+    <br>        
+    <br>        .parent-container{
+    <br>            display:flex;
+    <br>            justify-content:space-evenly;
+    <br>            flex-direction: row;
+    <br>            flex-wrap: wrap;
+    <br>            background-color: black;
+            }
+            
+    <br>
+    <br>
+    This code would be for the device parameters of a mobile phone or "small screen" as the "max-width" and "min-width" are set as the general pixel sizes of a mobile screen.
+    These can be altered to register a different screen size and maybe have a different style to fit the new perameters. For instance, on a large screen (1025px - 1200px); a 
+    webpage may have a fully accessible menu accross the top of the screen to direct you too a certain page. However due to a mobile device having sucha reduced pixel size (320px - 480px); you might consider putting the menu into a hamburger menu state instead for ease of access to the user.
+    <br><br>
+    See <a href="https://testsigma.com/blog/css-breakpoints/">Testsigma  </a> for a detailed breakdown of media queries.
+    </p>
+    
+    
+    </main>
+    
+    <!--nth Child Pseudo Selectors--><!--CSS Day 6 Part 1 video-->
+    <article>
+    <h2> nth Child Pseudo Selectors </h2>
+    
+    <p> 
+        The ":nth-child(n) selector" matches ever element that is the nth child (regardless of the parent).
+    <br> It has 3 uses and those are:-
+    <br> - n = 1 2 3 4 5 6 7 
+    <br> - 3n = 3 6 9 12 15 18
+    <br> - 3n-2 = 1 4 7 10 13 16 19
+    </p>
+    
+    <p> 
+        n = a number, keyword (odd or even), or a formula such as "3n nth term".
+        The code would be written using an < html element, id, class>:nth-child(< number,keyword or formula>) { "other code"}  
+    <br> Items inside of the " { } " will affect the targeted items.
+    </p>
+    <p> 
+       For instance. If we had a webpage with 3 sets of paragraphs on it then used the following:-
+       <br>
+       #IDname :nth-child(2) {
+        color: gold;
+       } 
+       <br><br>
+       Then the 2nd paragraph text would be changed to the colour gold as the number after ":nth-child" being "(2)" it allocates the change to the second paragraph.
+       If the item "(2)" was changed too "(odd)", then paragraphs thats are odd numbers (1, 3, 5, 7) would be chnaged to gold. Vice versa with "(even)". 
+       <br><br>
+       If we were to use "3n", then it would reciprocate the maths equivalent of "3n" and alter every 3rd sequenced item. "n" being the multiple used to identify a particular sequenced item.
+       "3n-2" would use a similar equivalent apart from it would take 2 from each item. Instead of starting at the third item, it would start the changes from the first. If we were to change the "2" to a different number, then that would be the step change to the sequence of alterations.
+       For example: If instead of "3n-2" , we had "3n-1" then it would start the sequential changes from the second item, then the fourth, then the sixth.
+    </p>
+    </article>
+    
+    <!--": :before/:after" Selectors CSS Day 6 Part 2 video-->
+    <span>
+    <h2> :before / :after Selectors</h2>
+    <p>
+    These selectors are used to alter the display of a specific part of text using a defining piece of "content". 
+    They can be used in terms of selecting a certain element of text like "article", "p" or any main body of text. 
+    However, if you were to use an image with these tags then if you had content within the quotation marks then the image would be restricted to the amount of text contained. 
+    </p>
+    
+    <p>
+        The main use of the ":before :after" tags is to direct the user to a section that may be more relevent to themselves.
+        For instance, on an ecommerce website as you may be looking at something there may be a pop up stating that people who viewed an item also viewed another. Likewise with news articles.
+    </p>
+    
+    <p>
+        The way we would write this code would be :-
+    <br> "element" : :before {
+    <br>   content: "specified text/image here" ;
+    <br>   background-color(or image): ;
+    <br>   width: ;
+    <br>   -other attributes -      
+        }
+    <br><br>
+         "element" : :after {
+    <br>   content: "specified text/image here" ;
+    <br>   background-color(or image): ;
+    <br>   width: ;
+    <br>   -other attributes -  
+        }
+        (See CSS day 6 Part 2 for visual aid)
+    </p>
+    </span>
+    
+    <!--box shadow and Text shadow CSS Day 6 Part 2 Video-->
+    <article>
+        <h2> Box and Text Shadows</h2>
+        <p>
+            These elements are self explanatory in terms of giving a shadow to a form of container using "box" (header, footer, div, article etc.) and a main body of text using "text" (heading, h1/2/3... paragraph etc ).
+            The rules for each are identicle apart from the "box shadow" has the ability to have an inset shadow.
+        </p>
+        <p>
+            In order for them to work, they require 2 values:
+           - h-offset = The horizontal offset of the shadow Positive values = right, negative values = left.
+           - v-offset = The verticle offset of the shadow. Positive values = below, negative values = above.
+        </p>
+    
+        <p>
+            There are additional values we can add such as :
+            - color - For example, using red, hex or rgba value. This is required if you are using Safari
+            - blur - The blur radius.  The higher the numbered value, the more blurred the shadow will appear.
+            - spread - The spread radius is the size of the shadow. (positive values increase the size of the shadow. Whereas negative values decrease the size of the shadow).
+            - inset - This changes the shadow from an outer appearing shadow (outset), to an inner appearing shadow (inset)
+        </p>
+    
+        <p>
+    The way we would write this into code woukd be as follows:
+    <br>
+     Box-shadow
+      element{
+        box-shadow: h-offset v-offset / blur, spread, color, inset; (These will be in pixel values taken in that specific order.)
+    }
+    <br><br>
+    For example:-
+    div{
+        box-shadow: 50px -50px 10px 20px rgba(160, 9, 9, 0.5) inset;
+    }
+        </p>
+    
+    
+        <h3>  Text Shadows</h3>
+        <p>
+    The text-shadow property adds a shadow specifically to text.
+    <br>
+    The values we would use would be the same as for a "box shadow" except it would be specified for a text element..
+    <br><br>
+    For example:-
+    <br>
+    h1{
+        text-shadow: 50px 50px 10px 20px rgba(103, 9, 9, 0.5) inset;
+    }
+    </b>
+    </p>
+    </article>
+    
+    <!--Variables and Custom Properties CSS Day 7 Part 1-->
+    <div>
+    <h2> Variables and Custom Properties </h2>
+    
+    <p>
+        To start with, the "< html >" tag is also known as the "root" element. Meaning that when we see 
+        ":root{ }" in CSS, it is applicable to the html page as a whole.
+    </p>
+    <br>
+    <p>
+        Now, when we use the ":root { }" code we have access to multiple page wide variables. 
+        Such as colours, which would be written as :-
+        :root {
+    <br>    color: var (--blue); - (var(custom property))
+        }
+        <br>
+        The options below define the custom properties.;
+        --white: #fafafa;
+        --blue: #4545e0;
+        --green:rgb(31, 74, 31);
+        --orange: #fd8206;
+        --brown: brown;
+    <br><br>
+    </p>
+    
+    <p>
+        The custom variable isn't restricted to colours only, we could use it accross a range of things such as background using :-
+    <br> 
+    "--Keyword: right;" - This woukld change amn image or text to the right side of the screen. We could change this to align how we wish.
+    "--Color: #0000ff;" - This woukld change the colour of text to whatever value is used for a colour.
+    <br> The terms "Keyword/Color" are changeable to whatever suits the use.
+    "--ComplexValue: 30px, 6px, 40px, 50px;" can be used to refer to the margin sizing we would like an image to be using the "TRBL" format. (Top, Right, Bottom, Left)
+    We coulkd also use it in conjunction with attributes like "box-shadow".
+    
+    
+    </p>
+    
+    
+    </div>
+</body>
+</html>
